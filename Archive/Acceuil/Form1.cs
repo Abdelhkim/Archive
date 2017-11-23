@@ -110,13 +110,15 @@ namespace Acceuil
             }
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+
+
+        private void Add_Verssement_Button_Click(object sender, EventArgs e)
         {
             add_Transer1.Visible = true;
             acceuil_user1.Visible = false;
         }
 
-        private void Versement_Button_Click(object sender, EventArgs e)
+        private void Home_Button_Click(object sender, EventArgs e)
         {
             add_Transer1.Visible = false;
             acceuil_user1.Visible = true;

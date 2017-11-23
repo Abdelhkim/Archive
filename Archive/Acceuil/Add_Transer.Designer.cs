@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Transer));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -55,18 +54,13 @@
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.gridtestBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.testDataSet = new Acceuil.testDataSet();
-            this.gridtestTableAdapter = new Acceuil.testDataSetTableAdapters.gridtestTableAdapter();
-            this.testDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.blablaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kikoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.blablaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.testDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuCards1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridtestBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.testDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -391,15 +385,14 @@
             this.bunifuCustomDataGrid2.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid2.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -409,12 +402,11 @@
             this.testDataGridViewTextBoxColumn,
             this.blablaDataGridViewTextBoxColumn,
             this.kikoDataGridViewTextBoxColumn});
-            this.bunifuCustomDataGrid2.DataSource = this.gridtestBindingSource;
             this.bunifuCustomDataGrid2.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuCustomDataGrid2.DoubleBuffered = true;
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -446,25 +438,11 @@
             this.bunifuThinButton23.TabIndex = 23;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gridtestBindingSource
+            // kikoDataGridViewTextBoxColumn
             // 
-            this.gridtestBindingSource.DataMember = "gridtest";
-            this.gridtestBindingSource.DataSource = this.testDataSet;
-            // 
-            // testDataSet
-            // 
-            this.testDataSet.DataSetName = "testDataSet";
-            this.testDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gridtestTableAdapter
-            // 
-            this.gridtestTableAdapter.ClearBeforeFill = true;
-            // 
-            // testDataGridViewTextBoxColumn
-            // 
-            this.testDataGridViewTextBoxColumn.DataPropertyName = "test";
-            this.testDataGridViewTextBoxColumn.HeaderText = "test";
-            this.testDataGridViewTextBoxColumn.Name = "testDataGridViewTextBoxColumn";
+            this.kikoDataGridViewTextBoxColumn.DataPropertyName = "kiko";
+            this.kikoDataGridViewTextBoxColumn.HeaderText = "kiko";
+            this.kikoDataGridViewTextBoxColumn.Name = "kikoDataGridViewTextBoxColumn";
             // 
             // blablaDataGridViewTextBoxColumn
             // 
@@ -472,11 +450,11 @@
             this.blablaDataGridViewTextBoxColumn.HeaderText = "blabla";
             this.blablaDataGridViewTextBoxColumn.Name = "blablaDataGridViewTextBoxColumn";
             // 
-            // kikoDataGridViewTextBoxColumn
+            // testDataGridViewTextBoxColumn
             // 
-            this.kikoDataGridViewTextBoxColumn.DataPropertyName = "kiko";
-            this.kikoDataGridViewTextBoxColumn.HeaderText = "kiko";
-            this.kikoDataGridViewTextBoxColumn.Name = "kikoDataGridViewTextBoxColumn";
+            this.testDataGridViewTextBoxColumn.DataPropertyName = "test";
+            this.testDataGridViewTextBoxColumn.HeaderText = "test";
+            this.testDataGridViewTextBoxColumn.Name = "testDataGridViewTextBoxColumn";
             // 
             // Add_Transer
             // 
@@ -494,8 +472,6 @@
             this.bunifuCards2.PerformLayout();
             this.bunifuCards3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridtestBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.testDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -525,9 +501,6 @@
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown5;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private System.Windows.Forms.BindingSource gridtestBindingSource;
-        private testDataSet testDataSet;
-        private testDataSetTableAdapters.gridtestTableAdapter gridtestTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn testDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn blablaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kikoDataGridViewTextBoxColumn;
