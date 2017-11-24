@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Transer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.Adminstration_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
             this.Number_Of_Boxs_ComboBox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.Date_of_Transfer_Creation_Label = new System.Windows.Forms.Label();
-            this.Add_Transfer_Button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Tribunal_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
             this.Tribunal_Label = new System.Windows.Forms.Label();
             this.Number_of_Boxs_Label = new System.Windows.Forms.Label();
@@ -48,12 +47,14 @@
             this.Code_of_Case_Label = new System.Windows.Forms.Label();
             this.Date_of_Proce_Label = new System.Windows.Forms.Label();
             this.Type_of_Box_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
-            this.Add_Box_Button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Type_of_Box_Label = new System.Windows.Forms.Label();
             this.The_Numbers_of_Box_Label = new System.Windows.Forms.Label();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.Insert_Folders_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Add_Files_Button = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Add_Box_Button = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Add_Transfer_Button = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -126,32 +127,6 @@
             this.Date_of_Transfer_Creation_Label.Size = new System.Drawing.Size(60, 24);
             this.Date_of_Transfer_Creation_Label.TabIndex = 19;
             this.Date_of_Transfer_Creation_Label.Text = "label2";
-            // 
-            // Add_Transfer_Button
-            // 
-            this.Add_Transfer_Button.ActiveBorderThickness = 1;
-            this.Add_Transfer_Button.ActiveCornerRadius = 20;
-            this.Add_Transfer_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.Add_Transfer_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Transfer_Button.BackColor = System.Drawing.Color.White;
-            this.Add_Transfer_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Transfer_Button.BackgroundImage")));
-            this.Add_Transfer_Button.ButtonText = "إضافة تحويلة";
-            this.Add_Transfer_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_Transfer_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Transfer_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.IdleBorderThickness = 1;
-            this.Add_Transfer_Button.IdleCornerRadius = 20;
-            this.Add_Transfer_Button.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Add_Transfer_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.Location = new System.Drawing.Point(279, 107);
-            this.Add_Transfer_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_Transfer_Button.Name = "Add_Transfer_Button";
-            this.Add_Transfer_Button.Size = new System.Drawing.Size(181, 41);
-            this.Add_Transfer_Button.TabIndex = 18;
-            this.Add_Transfer_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Tribunal_ComboBox
             // 
@@ -312,32 +287,6 @@
             this.Type_of_Box_ComboBox.Size = new System.Drawing.Size(174, 35);
             this.Type_of_Box_ComboBox.TabIndex = 23;
             // 
-            // Add_Box_Button
-            // 
-            this.Add_Box_Button.ActiveBorderThickness = 1;
-            this.Add_Box_Button.ActiveCornerRadius = 20;
-            this.Add_Box_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.Add_Box_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Box_Button.BackColor = System.Drawing.Color.Gainsboro;
-            this.Add_Box_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Box_Button.BackgroundImage")));
-            this.Add_Box_Button.ButtonText = "إضافة العلبة";
-            this.Add_Box_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_Box_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Box_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.IdleBorderThickness = 1;
-            this.Add_Box_Button.IdleCornerRadius = 20;
-            this.Add_Box_Button.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Add_Box_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.Location = new System.Drawing.Point(299, 87);
-            this.Add_Box_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_Box_Button.Name = "Add_Box_Button";
-            this.Add_Box_Button.Size = new System.Drawing.Size(142, 41);
-            this.Add_Box_Button.TabIndex = 23;
-            this.Add_Box_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Type_of_Box_Label
             // 
             this.Type_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -366,6 +315,7 @@
             this.bunifuCards3.BorderRadius = 5;
             this.bunifuCards3.BottomSahddow = true;
             this.bunifuCards3.color = System.Drawing.Color.Transparent;
+            this.bunifuCards3.Controls.Add(this.label1);
             this.bunifuCards3.Controls.Add(this.Insert_Folders_DataGridView);
             this.bunifuCards3.Controls.Add(this.Add_Files_Button);
             this.bunifuCards3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -380,20 +330,20 @@
             // Insert_Folders_DataGridView
             // 
             this.Insert_Folders_DataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Insert_Folders_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Insert_Folders_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Insert_Folders_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Insert_Folders_DataGridView.BackgroundColor = System.Drawing.Color.White;
             this.Insert_Folders_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Insert_Folders_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Insert_Folders_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Insert_Folders_DataGridView.Dock = System.Windows.Forms.DockStyle.Top;
             this.Insert_Folders_DataGridView.DoubleBuffered = true;
@@ -416,7 +366,7 @@
             this.Add_Files_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Add_Files_Button.BackColor = System.Drawing.Color.White;
             this.Add_Files_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Files_Button.BackgroundImage")));
-            this.Add_Files_Button.ButtonText = "إضافة تحويلة";
+            this.Add_Files_Button.ButtonText = "إضافة الملفات";
             this.Add_Files_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Add_Files_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
@@ -425,12 +375,74 @@
             this.Add_Files_Button.IdleFillColor = System.Drawing.Color.Transparent;
             this.Add_Files_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
             this.Add_Files_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.Location = new System.Drawing.Point(279, 267);
+            this.Add_Files_Button.Location = new System.Drawing.Point(5, 273);
             this.Add_Files_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Add_Files_Button.Name = "Add_Files_Button";
             this.Add_Files_Button.Size = new System.Drawing.Size(181, 41);
             this.Add_Files_Button.TabIndex = 23;
             this.Add_Files_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Add_Box_Button
+            // 
+            this.Add_Box_Button.ActiveBorderThickness = 1;
+            this.Add_Box_Button.ActiveCornerRadius = 20;
+            this.Add_Box_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Box_Button.ActiveForecolor = System.Drawing.Color.White;
+            this.Add_Box_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Box_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Add_Box_Button.BackColor = System.Drawing.Color.Gainsboro;
+            this.Add_Box_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Box_Button.BackgroundImage")));
+            this.Add_Box_Button.ButtonText = "إضافة العلبة";
+            this.Add_Box_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_Box_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add_Box_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Box_Button.IdleBorderThickness = 1;
+            this.Add_Box_Button.IdleCornerRadius = 20;
+            this.Add_Box_Button.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Add_Box_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Box_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Box_Button.Location = new System.Drawing.Point(299, 87);
+            this.Add_Box_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.Add_Box_Button.Name = "Add_Box_Button";
+            this.Add_Box_Button.Size = new System.Drawing.Size(142, 41);
+            this.Add_Box_Button.TabIndex = 23;
+            this.Add_Box_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Add_Transfer_Button
+            // 
+            this.Add_Transfer_Button.ActiveBorderThickness = 1;
+            this.Add_Transfer_Button.ActiveCornerRadius = 20;
+            this.Add_Transfer_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Transfer_Button.ActiveForecolor = System.Drawing.Color.White;
+            this.Add_Transfer_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Transfer_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Add_Transfer_Button.BackColor = System.Drawing.Color.White;
+            this.Add_Transfer_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Transfer_Button.BackgroundImage")));
+            this.Add_Transfer_Button.ButtonText = "إضافة تحويلة";
+            this.Add_Transfer_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_Transfer_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add_Transfer_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Transfer_Button.IdleBorderThickness = 1;
+            this.Add_Transfer_Button.IdleCornerRadius = 20;
+            this.Add_Transfer_Button.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Add_Transfer_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Transfer_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Transfer_Button.Location = new System.Drawing.Point(279, 107);
+            this.Add_Transfer_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.Add_Transfer_Button.Name = "Add_Transfer_Button";
+            this.Add_Transfer_Button.Size = new System.Drawing.Size(181, 41);
+            this.Add_Transfer_Button.TabIndex = 18;
+            this.Add_Transfer_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(623, 289);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 25);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "عنوان العلبة";
             // 
             // Add_Transer
             // 
@@ -447,6 +459,7 @@
             this.bunifuCards2.ResumeLayout(false);
             this.bunifuCards2.PerformLayout();
             this.bunifuCards3.ResumeLayout(false);
+            this.bunifuCards3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Insert_Folders_DataGridView)).EndInit();
             this.ResumeLayout(false);
 
@@ -477,5 +490,6 @@
         private System.Windows.Forms.Label Date_of_Proce_Label;
         private Bunifu.Framework.UI.BunifuDropdown Dates_of_Proce_ComboBox;
         private Bunifu.Framework.UI.BunifuCustomDataGrid Insert_Folders_DataGridView;
+        private System.Windows.Forms.Label label1;
     }
 }

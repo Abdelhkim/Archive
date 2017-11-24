@@ -74,7 +74,7 @@
             this.Add_Files_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Add_Files_Button.BackColor = System.Drawing.Color.White;
             this.Add_Files_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Files_Button.BackgroundImage")));
-            this.Add_Files_Button.ButtonText = "إضافة تحويلة";
+            this.Add_Files_Button.ButtonText = "إضافة علبة";
             this.Add_Files_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Add_Files_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
@@ -100,7 +100,7 @@
             this.bunifuThinButton21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "إضافة تحويلة";
+            this.bunifuThinButton21.ButtonText = "تعديل التحويلة";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
@@ -109,7 +109,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(72, 540);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(96, 540);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
