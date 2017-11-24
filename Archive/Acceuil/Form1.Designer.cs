@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.Header = new System.Windows.Forms.Panel();
+            this.Minimise_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Close_pictureBox = new System.Windows.Forms.PictureBox();
             this.Title_Lable = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.User_name_label = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.Help_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Logout_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Profile_Button = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -42,24 +43,24 @@
             this.Revise_Transfers_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Add_Verssement_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.User_name_label = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.User_PicturBox = new System.Windows.Forms.PictureBox();
             this.User_Background_picturebox = new System.Windows.Forms.PictureBox();
-            this.Minimise_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Close_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.add_Transer1 = new Acceuil.Add_Transer();
             this.acceuil_user1 = new Acceuil.Acceuil_user();
+            this.revise_transfers1 = new Acceuil.Revise_transfers();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_PicturBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_Background_picturebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
@@ -81,6 +82,29 @@
             this.Header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Header_MouseMove);
             this.Header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Header_MouseUp);
             // 
+            // Minimise_pictureBox
+            // 
+            this.Minimise_pictureBox.Image = global::Acceuil.Properties.Resources.close;
+            this.Minimise_pictureBox.Location = new System.Drawing.Point(12, 22);
+            this.Minimise_pictureBox.Name = "Minimise_pictureBox";
+            this.Minimise_pictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Minimise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Minimise_pictureBox.TabIndex = 7;
+            this.Minimise_pictureBox.TabStop = false;
+            this.Minimise_pictureBox.Click += new System.EventHandler(this.Minimise_pictureBox_Click);
+            // 
+            // Close_pictureBox
+            // 
+            this.Close_pictureBox.Image = global::Acceuil.Properties.Resources.Reduire;
+            this.Close_pictureBox.Location = new System.Drawing.Point(83, 27);
+            this.Close_pictureBox.Name = "Close_pictureBox";
+            this.Close_pictureBox.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.Close_pictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Close_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Close_pictureBox.TabIndex = 5;
+            this.Close_pictureBox.TabStop = false;
+            this.Close_pictureBox.Click += new System.EventHandler(this.Close_pictureBox_Click);
+            // 
             // Title_Lable
             // 
             this.Title_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -92,6 +116,31 @@
             this.Title_Lable.Size = new System.Drawing.Size(127, 28);
             this.Title_Lable.TabIndex = 2;
             this.Title_Lable.Text = "تدبير الأرشيف";
+            // 
+            // Maximise_pictureBox
+            // 
+            this.Maximise_pictureBox.Image = global::Acceuil.Properties.Resources.Agrendire;
+            this.Maximise_pictureBox.Location = new System.Drawing.Point(47, 22);
+            this.Maximise_pictureBox.Name = "Maximise_pictureBox";
+            this.Maximise_pictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Maximise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Maximise_pictureBox.TabIndex = 6;
+            this.Maximise_pictureBox.TabStop = false;
+            this.Maximise_pictureBox.Click += new System.EventHandler(this.Maximise_pictureBox_Click);
+            // 
+            // Humbutton
+            // 
+            this.Humbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Humbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Humbutton.Image = global::Acceuil.Properties.Resources.menu;
+            this.Humbutton.ImageActive = null;
+            this.Humbutton.Location = new System.Drawing.Point(899, 16);
+            this.Humbutton.Name = "Humbutton";
+            this.Humbutton.Size = new System.Drawing.Size(30, 30);
+            this.Humbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Humbutton.TabIndex = 1;
+            this.Humbutton.TabStop = false;
+            this.Humbutton.Zoom = 10;
             // 
             // panel1
             // 
@@ -111,39 +160,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(189, 597);
             this.panel1.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.panel3.Controls.Add(this.User_name_label);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.panel3.Location = new System.Drawing.Point(0, 158);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(189, 20);
-            this.panel3.TabIndex = 1;
-            // 
-            // User_name_label
-            // 
-            this.User_name_label.AutoSize = true;
-            this.User_name_label.Font = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.User_name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.User_name_label.Location = new System.Drawing.Point(56, -1);
-            this.User_name_label.Name = "User_name_label";
-            this.User_name_label.Size = new System.Drawing.Size(86, 20);
-            this.User_name_label.TabIndex = 4;
-            this.User_name_label.Text = "عبد الحكيم";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.panel2.Controls.Add(this.User_PicturBox);
-            this.panel2.Controls.Add(this.User_Background_picturebox);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(189, 158);
-            this.panel2.TabIndex = 0;
             // 
             // Help_Button
             // 
@@ -360,6 +376,7 @@
             this.Revise_Transfers_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Revise_Transfers_Button.Textcolor = System.Drawing.Color.White;
             this.Revise_Transfers_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Transfers_Button.Click += new System.EventHandler(this.Revise_Transfers_Button_Click);
             // 
             // Add_Verssement_Button
             // 
@@ -435,6 +452,39 @@
             this.Home_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panel3.Controls.Add(this.User_name_label);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panel3.Location = new System.Drawing.Point(0, 158);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(189, 20);
+            this.panel3.TabIndex = 1;
+            // 
+            // User_name_label
+            // 
+            this.User_name_label.AutoSize = true;
+            this.User_name_label.Font = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.User_name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.User_name_label.Location = new System.Drawing.Point(56, -1);
+            this.User_name_label.Name = "User_name_label";
+            this.User_name_label.Size = new System.Drawing.Size(86, 20);
+            this.User_name_label.TabIndex = 4;
+            this.User_name_label.Text = "عبد الحكيم";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panel2.Controls.Add(this.User_PicturBox);
+            this.panel2.Controls.Add(this.User_Background_picturebox);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(189, 158);
+            this.panel2.TabIndex = 0;
+            // 
             // User_PicturBox
             // 
             this.User_PicturBox.BackgroundImage = global::Acceuil.Properties.Resources.Cadre;
@@ -460,54 +510,6 @@
             this.User_Background_picturebox.TabIndex = 0;
             this.User_Background_picturebox.TabStop = false;
             // 
-            // Minimise_pictureBox
-            // 
-            this.Minimise_pictureBox.Image = global::Acceuil.Properties.Resources.close;
-            this.Minimise_pictureBox.Location = new System.Drawing.Point(12, 22);
-            this.Minimise_pictureBox.Name = "Minimise_pictureBox";
-            this.Minimise_pictureBox.Size = new System.Drawing.Size(16, 16);
-            this.Minimise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Minimise_pictureBox.TabIndex = 7;
-            this.Minimise_pictureBox.TabStop = false;
-            this.Minimise_pictureBox.Click += new System.EventHandler(this.Minimise_pictureBox_Click);
-            // 
-            // Close_pictureBox
-            // 
-            this.Close_pictureBox.Image = global::Acceuil.Properties.Resources.Reduire;
-            this.Close_pictureBox.Location = new System.Drawing.Point(83, 27);
-            this.Close_pictureBox.Name = "Close_pictureBox";
-            this.Close_pictureBox.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.Close_pictureBox.Size = new System.Drawing.Size(16, 16);
-            this.Close_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Close_pictureBox.TabIndex = 5;
-            this.Close_pictureBox.TabStop = false;
-            this.Close_pictureBox.Click += new System.EventHandler(this.Close_pictureBox_Click);
-            // 
-            // Maximise_pictureBox
-            // 
-            this.Maximise_pictureBox.Image = global::Acceuil.Properties.Resources.Agrendire;
-            this.Maximise_pictureBox.Location = new System.Drawing.Point(47, 22);
-            this.Maximise_pictureBox.Name = "Maximise_pictureBox";
-            this.Maximise_pictureBox.Size = new System.Drawing.Size(16, 16);
-            this.Maximise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Maximise_pictureBox.TabIndex = 6;
-            this.Maximise_pictureBox.TabStop = false;
-            this.Maximise_pictureBox.Click += new System.EventHandler(this.Maximise_pictureBox_Click);
-            // 
-            // Humbutton
-            // 
-            this.Humbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Humbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Humbutton.Image = global::Acceuil.Properties.Resources.menu;
-            this.Humbutton.ImageActive = null;
-            this.Humbutton.Location = new System.Drawing.Point(899, 16);
-            this.Humbutton.Name = "Humbutton";
-            this.Humbutton.Size = new System.Drawing.Size(30, 30);
-            this.Humbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Humbutton.TabIndex = 1;
-            this.Humbutton.TabStop = false;
-            this.Humbutton.Zoom = 10;
-            // 
             // add_Transer1
             // 
             this.add_Transer1.BackColor = System.Drawing.Color.White;
@@ -527,12 +529,22 @@
             this.acceuil_user1.Size = new System.Drawing.Size(748, 597);
             this.acceuil_user1.TabIndex = 4;
             // 
+            // revise_transfers1
+            // 
+            this.revise_transfers1.BackColor = System.Drawing.Color.White;
+            this.revise_transfers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.revise_transfers1.Location = new System.Drawing.Point(0, 62);
+            this.revise_transfers1.Name = "revise_transfers1";
+            this.revise_transfers1.Size = new System.Drawing.Size(748, 597);
+            this.revise_transfers1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(937, 659);
+            this.Controls.Add(this.revise_transfers1);
             this.Controls.Add(this.add_Transer1);
             this.Controls.Add(this.acceuil_user1);
             this.Controls.Add(this.panel1);
@@ -544,16 +556,16 @@
             this.Move += new System.EventHandler(this.Form1_Move);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.User_PicturBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_Background_picturebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -582,6 +594,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton Help_Button;
         private Acceuil_user acceuil_user1;
         private Add_Transer add_Transer1;
+        private Revise_transfers revise_transfers1;
     }
 }
 

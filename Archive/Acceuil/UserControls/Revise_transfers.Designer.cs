@@ -30,20 +30,20 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Revise_transfers));
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Add_Files_Button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.Verssements_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Add_Files_Button = new System.Windows.Forms.Button();
+            this.Modifier_Verssement = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Verssements_DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuCustomDataGrid1
+            // Verssements_DataGridView
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Verssements_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Verssements_DataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.Verssements_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Verssements_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -51,90 +51,70 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(748, 498);
-            this.bunifuCustomDataGrid1.TabIndex = 0;
+            this.Verssements_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Verssements_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Verssements_DataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Verssements_DataGridView.DoubleBuffered = true;
+            this.Verssements_DataGridView.EnableHeadersVisualStyles = false;
+            this.Verssements_DataGridView.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Verssements_DataGridView.HeaderForeColor = System.Drawing.Color.White;
+            this.Verssements_DataGridView.Location = new System.Drawing.Point(0, 0);
+            this.Verssements_DataGridView.Name = "Verssements_DataGridView";
+            this.Verssements_DataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Verssements_DataGridView.Size = new System.Drawing.Size(748, 535);
+            this.Verssements_DataGridView.TabIndex = 0;
             // 
             // Add_Files_Button
             // 
-            this.Add_Files_Button.ActiveBorderThickness = 1;
-            this.Add_Files_Button.ActiveCornerRadius = 20;
-            this.Add_Files_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.Add_Files_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Files_Button.BackColor = System.Drawing.Color.White;
-            this.Add_Files_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Files_Button.BackgroundImage")));
-            this.Add_Files_Button.ButtonText = "إضافة علبة";
-            this.Add_Files_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Files_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.IdleBorderThickness = 1;
-            this.Add_Files_Button.IdleCornerRadius = 20;
-            this.Add_Files_Button.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Add_Files_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.Location = new System.Drawing.Point(436, 540);
-            this.Add_Files_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.Add_Files_Button.Location = new System.Drawing.Point(463, 541);
             this.Add_Files_Button.Name = "Add_Files_Button";
-            this.Add_Files_Button.Size = new System.Drawing.Size(181, 41);
-            this.Add_Files_Button.TabIndex = 24;
-            this.Add_Files_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Add_Files_Button.Size = new System.Drawing.Size(115, 32);
+            this.Add_Files_Button.TabIndex = 26;
+            this.Add_Files_Button.Text = "إضافة علبة";
+            this.Add_Files_Button.UseVisualStyleBackColor = true;
             // 
-            // bunifuThinButton21
+            // Modifier_Verssement
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "تعديل التحويلة";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(96, 540);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
-            this.bunifuThinButton21.TabIndex = 25;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Modifier_Verssement.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Modifier_Verssement.Location = new System.Drawing.Point(305, 541);
+            this.Modifier_Verssement.Name = "Modifier_Verssement";
+            this.Modifier_Verssement.Size = new System.Drawing.Size(152, 32);
+            this.Modifier_Verssement.TabIndex = 27;
+            this.Modifier_Verssement.Text = "تعديل التحويلة";
+            this.Modifier_Verssement.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.Location = new System.Drawing.Point(167, 541);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 32);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "طباعة تحويلة";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Revise_transfers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Modifier_Verssement);
             this.Controls.Add(this.Add_Files_Button);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
+            this.Controls.Add(this.Verssements_DataGridView);
             this.Name = "Revise_transfers";
             this.Size = new System.Drawing.Size(748, 597);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Verssements_DataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private Bunifu.Framework.UI.BunifuThinButton2 Add_Files_Button;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid Verssements_DataGridView;
+        private System.Windows.Forms.Button Add_Files_Button;
+        private System.Windows.Forms.Button Modifier_Verssement;
+        private System.Windows.Forms.Button button1;
     }
 }

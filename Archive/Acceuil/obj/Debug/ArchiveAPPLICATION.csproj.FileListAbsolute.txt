@@ -39,3 +39,4 @@ C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\bin\Debug\LiveChar
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.Revise_transfers.resources
+C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\ArchiveAPPLICATION.csprojResolveAssemblyReference.cache

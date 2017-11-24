@@ -31,7 +31,11 @@ namespace Acceuil
             this.CenterToScreen();
             User_Background_picturebox.BackColor = Color.Transparent;
             User_Background_picturebox.Parent = User_PicturBox;
-            
+            add_Transer1.Visible = false;
+            acceuil_user1.Visible = true;
+            revise_transfers1.Visible = false;
+
+
         }
         private void Header_MouseDown(object sender, MouseEventArgs e)
         {
@@ -116,6 +120,7 @@ namespace Acceuil
         {
             add_Transer1.Visible = true;
             acceuil_user1.Visible = false;
+            revise_transfers1.Visible = false;
         }
 
         private void Home_Button_Click(object sender, EventArgs e)
@@ -123,6 +128,14 @@ namespace Acceuil
             
             add_Transer1.Visible = false;
             acceuil_user1.Visible = true;
+            revise_transfers1.Visible = false;
+        }
+
+        private void Revise_Transfers_Button_Click(object sender, EventArgs e)
+        {
+            add_Transer1.Visible = false;
+            acceuil_user1.Visible = false;
+            revise_transfers1.Visible = true;
         }
 
         private void Minimise_pictureBox_Click(object sender, EventArgs e)
