@@ -120,6 +120,7 @@ namespace Acceuil
 
         private void Home_Button_Click(object sender, EventArgs e)
         {
+            
             add_Transer1.Visible = false;
             acceuil_user1.Visible = true;
         }
