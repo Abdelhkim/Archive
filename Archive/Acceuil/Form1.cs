@@ -29,8 +29,8 @@ namespace Acceuil
 
             statu = 0;
             this.CenterToScreen();
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Parent = User_PicturBox;
+            User_Background_picturebox.BackColor = Color.Transparent;
+            User_Background_picturebox.Parent = User_PicturBox;
             
         }
         private void Header_MouseDown(object sender, MouseEventArgs e)

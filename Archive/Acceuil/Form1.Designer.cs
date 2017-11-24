@@ -35,21 +35,21 @@
             this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
             this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Help_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Logout_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Profile_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Revise_Folders_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Revise_Boxs_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Revise_Transfers_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Add_Verssement_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.User_name_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.User_PicturBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.acceuil_user1 = new Acceuil.Acceuil_user();
+            this.User_Background_picturebox = new System.Windows.Forms.PictureBox();
             this.add_Transer1 = new Acceuil.Add_Transer();
+            this.acceuil_user1 = new Acceuil.Acceuil_user();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
@@ -59,7 +59,7 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_PicturBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.User_Background_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
@@ -144,12 +144,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.panel1.Controls.Add(this.bunifuFlatButton7);
-            this.panel1.Controls.Add(this.bunifuFlatButton6);
-            this.panel1.Controls.Add(this.bunifuFlatButton5);
-            this.panel1.Controls.Add(this.bunifuFlatButton4);
-            this.panel1.Controls.Add(this.bunifuFlatButton3);
-            this.panel1.Controls.Add(this.bunifuFlatButton2);
+            this.panel1.Controls.Add(this.Help_Button);
+            this.panel1.Controls.Add(this.Logout_Button);
+            this.panel1.Controls.Add(this.Profile_Button);
+            this.panel1.Controls.Add(this.Revise_Folders_Button);
+            this.panel1.Controls.Add(this.Revise_Boxs_Button);
+            this.panel1.Controls.Add(this.Revise_Transfers_Button);
             this.panel1.Controls.Add(this.Add_Verssement_Button);
             this.panel1.Controls.Add(this.Home_Button);
             this.panel1.Controls.Add(this.panel3);
@@ -160,221 +160,221 @@
             this.panel1.Size = new System.Drawing.Size(189, 597);
             this.panel1.TabIndex = 3;
             // 
-            // bunifuFlatButton7
+            // Help_Button
             // 
-            this.bunifuFlatButton7.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.bunifuFlatButton7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton7.BorderRadius = 0;
-            this.bunifuFlatButton7.ButtonText = "المساعدة ";
-            this.bunifuFlatButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton7.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuFlatButton7.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.Iconimage = null;
-            this.bunifuFlatButton7.Iconimage_right = global::Acceuil.Properties.Resources.info;
-            this.bunifuFlatButton7.Iconimage_right_Selected = null;
-            this.bunifuFlatButton7.Iconimage_Selected = null;
-            this.bunifuFlatButton7.IconMarginLeft = 0;
-            this.bunifuFlatButton7.IconMarginRight = 0;
-            this.bunifuFlatButton7.IconRightVisible = true;
-            this.bunifuFlatButton7.IconRightZoom = 0D;
-            this.bunifuFlatButton7.IconVisible = true;
-            this.bunifuFlatButton7.IconZoom = 60D;
-            this.bunifuFlatButton7.IsTab = false;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 514);
-            this.bunifuFlatButton7.Name = "bunifuFlatButton7";
-            this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton7.selected = false;
-            this.bunifuFlatButton7.Size = new System.Drawing.Size(189, 48);
-            this.bunifuFlatButton7.TabIndex = 9;
-            this.bunifuFlatButton7.Text = "المساعدة ";
-            this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton7.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Help_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Help_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Help_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Help_Button.BorderRadius = 0;
+            this.Help_Button.ButtonText = "المساعدة ";
+            this.Help_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Help_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Help_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Help_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Help_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.Help_Button.Iconimage = null;
+            this.Help_Button.Iconimage_right = global::Acceuil.Properties.Resources.info;
+            this.Help_Button.Iconimage_right_Selected = null;
+            this.Help_Button.Iconimage_Selected = null;
+            this.Help_Button.IconMarginLeft = 0;
+            this.Help_Button.IconMarginRight = 0;
+            this.Help_Button.IconRightVisible = true;
+            this.Help_Button.IconRightZoom = 0D;
+            this.Help_Button.IconVisible = true;
+            this.Help_Button.IconZoom = 60D;
+            this.Help_Button.IsTab = false;
+            this.Help_Button.Location = new System.Drawing.Point(0, 514);
+            this.Help_Button.Name = "Help_Button";
+            this.Help_Button.Normalcolor = System.Drawing.Color.Transparent;
+            this.Help_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Help_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Help_Button.selected = false;
+            this.Help_Button.Size = new System.Drawing.Size(189, 48);
+            this.Help_Button.TabIndex = 9;
+            this.Help_Button.Text = "المساعدة ";
+            this.Help_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Help_Button.Textcolor = System.Drawing.Color.White;
+            this.Help_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             // 
-            // bunifuFlatButton6
+            // Logout_Button
             // 
-            this.bunifuFlatButton6.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.bunifuFlatButton6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton6.BorderRadius = 0;
-            this.bunifuFlatButton6.ButtonText = "تسجيل الخروج ";
-            this.bunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.Iconimage = null;
-            this.bunifuFlatButton6.Iconimage_right = global::Acceuil.Properties.Resources.logout;
-            this.bunifuFlatButton6.Iconimage_right_Selected = null;
-            this.bunifuFlatButton6.Iconimage_Selected = null;
-            this.bunifuFlatButton6.IconMarginLeft = 0;
-            this.bunifuFlatButton6.IconMarginRight = 0;
-            this.bunifuFlatButton6.IconRightVisible = true;
-            this.bunifuFlatButton6.IconRightZoom = 0D;
-            this.bunifuFlatButton6.IconVisible = true;
-            this.bunifuFlatButton6.IconZoom = 60D;
-            this.bunifuFlatButton6.IsTab = false;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 466);
-            this.bunifuFlatButton6.Name = "bunifuFlatButton6";
-            this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton6.selected = false;
-            this.bunifuFlatButton6.Size = new System.Drawing.Size(189, 48);
-            this.bunifuFlatButton6.TabIndex = 8;
-            this.bunifuFlatButton6.Text = "تسجيل الخروج ";
-            this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton6.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Logout_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Logout_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Logout_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logout_Button.BorderRadius = 0;
+            this.Logout_Button.ButtonText = "تسجيل الخروج ";
+            this.Logout_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Logout_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Logout_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logout_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Logout_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.Logout_Button.Iconimage = null;
+            this.Logout_Button.Iconimage_right = global::Acceuil.Properties.Resources.logout;
+            this.Logout_Button.Iconimage_right_Selected = null;
+            this.Logout_Button.Iconimage_Selected = null;
+            this.Logout_Button.IconMarginLeft = 0;
+            this.Logout_Button.IconMarginRight = 0;
+            this.Logout_Button.IconRightVisible = true;
+            this.Logout_Button.IconRightZoom = 0D;
+            this.Logout_Button.IconVisible = true;
+            this.Logout_Button.IconZoom = 60D;
+            this.Logout_Button.IsTab = false;
+            this.Logout_Button.Location = new System.Drawing.Point(0, 466);
+            this.Logout_Button.Name = "Logout_Button";
+            this.Logout_Button.Normalcolor = System.Drawing.Color.Transparent;
+            this.Logout_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Logout_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Logout_Button.selected = false;
+            this.Logout_Button.Size = new System.Drawing.Size(189, 48);
+            this.Logout_Button.TabIndex = 8;
+            this.Logout_Button.Text = "تسجيل الخروج ";
+            this.Logout_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Logout_Button.Textcolor = System.Drawing.Color.White;
+            this.Logout_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             // 
-            // bunifuFlatButton5
+            // Profile_Button
             // 
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.bunifuFlatButton5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = " الملف الشخصي ";
-            this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconimage = null;
-            this.bunifuFlatButton5.Iconimage_right = global::Acceuil.Properties.Resources.users;
-            this.bunifuFlatButton5.Iconimage_right_Selected = null;
-            this.bunifuFlatButton5.Iconimage_Selected = null;
-            this.bunifuFlatButton5.IconMarginLeft = 0;
-            this.bunifuFlatButton5.IconMarginRight = 0;
-            this.bunifuFlatButton5.IconRightVisible = true;
-            this.bunifuFlatButton5.IconRightZoom = 0D;
-            this.bunifuFlatButton5.IconVisible = true;
-            this.bunifuFlatButton5.IconZoom = 60D;
-            this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(0, 418);
-            this.bunifuFlatButton5.Name = "bunifuFlatButton5";
-            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(189, 48);
-            this.bunifuFlatButton5.TabIndex = 7;
-            this.bunifuFlatButton5.Text = " الملف الشخصي ";
-            this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Profile_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Profile_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Profile_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Profile_Button.BorderRadius = 0;
+            this.Profile_Button.ButtonText = " الملف الشخصي ";
+            this.Profile_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Profile_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Profile_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Profile_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Profile_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.Profile_Button.Iconimage = null;
+            this.Profile_Button.Iconimage_right = global::Acceuil.Properties.Resources.users;
+            this.Profile_Button.Iconimage_right_Selected = null;
+            this.Profile_Button.Iconimage_Selected = null;
+            this.Profile_Button.IconMarginLeft = 0;
+            this.Profile_Button.IconMarginRight = 0;
+            this.Profile_Button.IconRightVisible = true;
+            this.Profile_Button.IconRightZoom = 0D;
+            this.Profile_Button.IconVisible = true;
+            this.Profile_Button.IconZoom = 60D;
+            this.Profile_Button.IsTab = false;
+            this.Profile_Button.Location = new System.Drawing.Point(0, 418);
+            this.Profile_Button.Name = "Profile_Button";
+            this.Profile_Button.Normalcolor = System.Drawing.Color.Transparent;
+            this.Profile_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Profile_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Profile_Button.selected = false;
+            this.Profile_Button.Size = new System.Drawing.Size(189, 48);
+            this.Profile_Button.TabIndex = 7;
+            this.Profile_Button.Text = " الملف الشخصي ";
+            this.Profile_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Profile_Button.Textcolor = System.Drawing.Color.White;
+            this.Profile_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             // 
-            // bunifuFlatButton4
+            // Revise_Folders_Button
             // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = " مراجعة الملفات ";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = null;
-            this.bunifuFlatButton4.Iconimage_right = global::Acceuil.Properties.Resources.archive;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 0;
-            this.bunifuFlatButton4.IconMarginRight = 0;
-            this.bunifuFlatButton4.IconRightVisible = true;
-            this.bunifuFlatButton4.IconRightZoom = 0D;
-            this.bunifuFlatButton4.IconVisible = true;
-            this.bunifuFlatButton4.IconZoom = 60D;
-            this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 370);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(189, 48);
-            this.bunifuFlatButton4.TabIndex = 6;
-            this.bunifuFlatButton4.Text = " مراجعة الملفات ";
-            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Folders_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Revise_Folders_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Revise_Folders_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Revise_Folders_Button.BorderRadius = 0;
+            this.Revise_Folders_Button.ButtonText = " مراجعة الملفات ";
+            this.Revise_Folders_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Revise_Folders_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Revise_Folders_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Revise_Folders_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Folders_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.Revise_Folders_Button.Iconimage = null;
+            this.Revise_Folders_Button.Iconimage_right = global::Acceuil.Properties.Resources.archive;
+            this.Revise_Folders_Button.Iconimage_right_Selected = null;
+            this.Revise_Folders_Button.Iconimage_Selected = null;
+            this.Revise_Folders_Button.IconMarginLeft = 0;
+            this.Revise_Folders_Button.IconMarginRight = 0;
+            this.Revise_Folders_Button.IconRightVisible = true;
+            this.Revise_Folders_Button.IconRightZoom = 0D;
+            this.Revise_Folders_Button.IconVisible = true;
+            this.Revise_Folders_Button.IconZoom = 60D;
+            this.Revise_Folders_Button.IsTab = false;
+            this.Revise_Folders_Button.Location = new System.Drawing.Point(0, 370);
+            this.Revise_Folders_Button.Name = "Revise_Folders_Button";
+            this.Revise_Folders_Button.Normalcolor = System.Drawing.Color.Transparent;
+            this.Revise_Folders_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Revise_Folders_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Revise_Folders_Button.selected = false;
+            this.Revise_Folders_Button.Size = new System.Drawing.Size(189, 48);
+            this.Revise_Folders_Button.TabIndex = 6;
+            this.Revise_Folders_Button.Text = " مراجعة الملفات ";
+            this.Revise_Folders_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Revise_Folders_Button.Textcolor = System.Drawing.Color.White;
+            this.Revise_Folders_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             // 
-            // bunifuFlatButton3
+            // Revise_Boxs_Button
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = " مراجعة العلب ";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = null;
-            this.bunifuFlatButton3.Iconimage_right = global::Acceuil.Properties.Resources.open_carton_box;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 60D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 322);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(189, 48);
-            this.bunifuFlatButton3.TabIndex = 5;
-            this.bunifuFlatButton3.Text = " مراجعة العلب ";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Boxs_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Revise_Boxs_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Revise_Boxs_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Revise_Boxs_Button.BorderRadius = 0;
+            this.Revise_Boxs_Button.ButtonText = " مراجعة العلب ";
+            this.Revise_Boxs_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Revise_Boxs_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Revise_Boxs_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Revise_Boxs_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Boxs_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.Revise_Boxs_Button.Iconimage = null;
+            this.Revise_Boxs_Button.Iconimage_right = global::Acceuil.Properties.Resources.open_carton_box;
+            this.Revise_Boxs_Button.Iconimage_right_Selected = null;
+            this.Revise_Boxs_Button.Iconimage_Selected = null;
+            this.Revise_Boxs_Button.IconMarginLeft = 0;
+            this.Revise_Boxs_Button.IconMarginRight = 0;
+            this.Revise_Boxs_Button.IconRightVisible = true;
+            this.Revise_Boxs_Button.IconRightZoom = 0D;
+            this.Revise_Boxs_Button.IconVisible = true;
+            this.Revise_Boxs_Button.IconZoom = 60D;
+            this.Revise_Boxs_Button.IsTab = false;
+            this.Revise_Boxs_Button.Location = new System.Drawing.Point(0, 322);
+            this.Revise_Boxs_Button.Name = "Revise_Boxs_Button";
+            this.Revise_Boxs_Button.Normalcolor = System.Drawing.Color.Transparent;
+            this.Revise_Boxs_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Revise_Boxs_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Revise_Boxs_Button.selected = false;
+            this.Revise_Boxs_Button.Size = new System.Drawing.Size(189, 48);
+            this.Revise_Boxs_Button.TabIndex = 5;
+            this.Revise_Boxs_Button.Text = " مراجعة العلب ";
+            this.Revise_Boxs_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Revise_Boxs_Button.Textcolor = System.Drawing.Color.White;
+            this.Revise_Boxs_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             // 
-            // bunifuFlatButton2
+            // Revise_Transfers_Button
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = " مراجعة التحويلات ";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = global::Acceuil.Properties.Resources.boxes;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 60D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 274);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(189, 48);
-            this.bunifuFlatButton2.TabIndex = 4;
-            this.bunifuFlatButton2.Text = " مراجعة التحويلات ";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Transfers_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Revise_Transfers_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Revise_Transfers_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Revise_Transfers_Button.BorderRadius = 0;
+            this.Revise_Transfers_Button.ButtonText = " مراجعة التحويلات ";
+            this.Revise_Transfers_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Revise_Transfers_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.Revise_Transfers_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Revise_Transfers_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Transfers_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.Revise_Transfers_Button.Iconimage = null;
+            this.Revise_Transfers_Button.Iconimage_right = global::Acceuil.Properties.Resources.boxes;
+            this.Revise_Transfers_Button.Iconimage_right_Selected = null;
+            this.Revise_Transfers_Button.Iconimage_Selected = null;
+            this.Revise_Transfers_Button.IconMarginLeft = 0;
+            this.Revise_Transfers_Button.IconMarginRight = 0;
+            this.Revise_Transfers_Button.IconRightVisible = true;
+            this.Revise_Transfers_Button.IconRightZoom = 0D;
+            this.Revise_Transfers_Button.IconVisible = true;
+            this.Revise_Transfers_Button.IconZoom = 60D;
+            this.Revise_Transfers_Button.IsTab = false;
+            this.Revise_Transfers_Button.Location = new System.Drawing.Point(0, 274);
+            this.Revise_Transfers_Button.Name = "Revise_Transfers_Button";
+            this.Revise_Transfers_Button.Normalcolor = System.Drawing.Color.Transparent;
+            this.Revise_Transfers_Button.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Revise_Transfers_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Revise_Transfers_Button.selected = false;
+            this.Revise_Transfers_Button.Size = new System.Drawing.Size(189, 48);
+            this.Revise_Transfers_Button.TabIndex = 4;
+            this.Revise_Transfers_Button.Text = " مراجعة التحويلات ";
+            this.Revise_Transfers_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Revise_Transfers_Button.Textcolor = System.Drawing.Color.White;
+            this.Revise_Transfers_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             // 
             // Add_Verssement_Button
             // 
@@ -476,7 +476,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.panel2.Controls.Add(this.User_PicturBox);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.User_Background_picturebox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -494,27 +494,19 @@
             this.User_PicturBox.TabIndex = 0;
             this.User_PicturBox.TabStop = false;
             // 
-            // pictureBox1
+            // User_Background_picturebox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::Acceuil.Properties.Resources.Cadre;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 158);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // acceuil_user1
-            // 
-            this.acceuil_user1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.acceuil_user1.Location = new System.Drawing.Point(0, 62);
-            this.acceuil_user1.Name = "acceuil_user1";
-            this.acceuil_user1.Size = new System.Drawing.Size(748, 597);
-            this.acceuil_user1.TabIndex = 4;
+            this.User_Background_picturebox.BackColor = System.Drawing.Color.Transparent;
+            this.User_Background_picturebox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.User_Background_picturebox.ErrorImage = null;
+            this.User_Background_picturebox.Image = global::Acceuil.Properties.Resources.Cadre;
+            this.User_Background_picturebox.InitialImage = null;
+            this.User_Background_picturebox.Location = new System.Drawing.Point(0, 0);
+            this.User_Background_picturebox.Name = "User_Background_picturebox";
+            this.User_Background_picturebox.Size = new System.Drawing.Size(189, 158);
+            this.User_Background_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.User_Background_picturebox.TabIndex = 0;
+            this.User_Background_picturebox.TabStop = false;
             // 
             // add_Transer1
             // 
@@ -525,6 +517,14 @@
             this.add_Transer1.Size = new System.Drawing.Size(748, 597);
             this.add_Transer1.TabIndex = 5;
             this.add_Transer1.Visible = false;
+            // 
+            // acceuil_user1
+            // 
+            this.acceuil_user1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.acceuil_user1.Location = new System.Drawing.Point(0, 62);
+            this.acceuil_user1.Name = "acceuil_user1";
+            this.acceuil_user1.Size = new System.Drawing.Size(748, 597);
+            this.acceuil_user1.TabIndex = 4;
             // 
             // Form1
             // 
@@ -552,7 +552,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.User_PicturBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.User_Background_picturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -567,18 +567,18 @@
         private Bunifu.Framework.UI.BunifuCustomLabel Title_Lable;
         private System.Windows.Forms.PictureBox Maximise_pictureBox;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox User_Background_picturebox;
         private System.Windows.Forms.PictureBox User_PicturBox;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label User_name_label;
         private Bunifu.Framework.UI.BunifuFlatButton Home_Button;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton Revise_Transfers_Button;
         private Bunifu.Framework.UI.BunifuFlatButton Add_Verssement_Button;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
+        private Bunifu.Framework.UI.BunifuFlatButton Revise_Boxs_Button;
+        private Bunifu.Framework.UI.BunifuFlatButton Profile_Button;
+        private Bunifu.Framework.UI.BunifuFlatButton Revise_Folders_Button;
+        private Bunifu.Framework.UI.BunifuFlatButton Logout_Button;
+        private Bunifu.Framework.UI.BunifuFlatButton Help_Button;
         private Acceuil_user acceuil_user1;
         private Add_Transer add_Transer1;
     }
