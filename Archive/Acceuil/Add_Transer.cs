@@ -43,16 +43,5 @@ namespace Acceuil
             }else
                 MessageBox.Show("Les Champs de Boites ne Doit pas être Vide ");
         }
-
-        private void Number_Of_Boxs_TextBox_VisibleChanged(object sender, EventArgs e)
-        {
-            foreach (Control item in Controls)
-            {
-                if (item is TextBox)
-                {
-                    item.Text = "";
-                }
-            }
-        }
     }
 }

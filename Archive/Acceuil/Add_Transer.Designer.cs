@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.Add_Transfer_Button = new System.Windows.Forms.Button();
-            this.Number_Of_Boxs_TextBox = new System.Windows.Forms.TextBox();
             this.Adminstration_ComboBox = new System.Windows.Forms.ComboBox();
             this.Tribunal_ComboBox = new System.Windows.Forms.ComboBox();
             this.Date_of_Transfer_Creation_Label = new System.Windows.Forms.Label();
@@ -41,6 +40,8 @@
             this.Administration_Label = new System.Windows.Forms.Label();
             this.Date_Label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Codes_of_Cases_ComboBox = new System.Windows.Forms.ComboBox();
             this.Dates_of_Proce_ComboBox = new System.Windows.Forms.ComboBox();
             this.Type_of_Box_ComboBox = new System.Windows.Forms.ComboBox();
@@ -51,12 +52,11 @@
             this.The_Numbers_of_Box_Label = new System.Windows.Forms.Label();
             this.Number_of_Box_Label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Box_Cord_Label = new System.Windows.Forms.Label();
             this.Add_Files_Button = new System.Windows.Forms.Button();
             this.Insert_Folders_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Box_Cord_Label = new System.Windows.Forms.Label();
+            this.Number_Of_Boxs_TextBox = new System.Windows.Forms.TextBox();
             this.bunifuCards1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -69,8 +69,8 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Transparent;
-            this.bunifuCards1.Controls.Add(this.Add_Transfer_Button);
             this.bunifuCards1.Controls.Add(this.Number_Of_Boxs_TextBox);
+            this.bunifuCards1.Controls.Add(this.Add_Transfer_Button);
             this.bunifuCards1.Controls.Add(this.Adminstration_ComboBox);
             this.bunifuCards1.Controls.Add(this.Tribunal_ComboBox);
             this.bunifuCards1.Controls.Add(this.Date_of_Transfer_Creation_Label);
@@ -97,15 +97,6 @@
             this.Add_Transfer_Button.Text = "إضافة تحويلة";
             this.Add_Transfer_Button.UseVisualStyleBackColor = true;
             this.Add_Transfer_Button.Click += new System.EventHandler(this.Add_Transfer_Button_Click);
-            // 
-            // Number_Of_Boxs_TextBox
-            // 
-            this.Number_Of_Boxs_TextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number_Of_Boxs_TextBox.Location = new System.Drawing.Point(20, 78);
-            this.Number_Of_Boxs_TextBox.Name = "Number_Of_Boxs_TextBox";
-            this.Number_Of_Boxs_TextBox.Size = new System.Drawing.Size(159, 22);
-            this.Number_Of_Boxs_TextBox.TabIndex = 43;
-            this.Number_Of_Boxs_TextBox.VisibleChanged += new System.EventHandler(this.Number_Of_Boxs_TextBox_VisibleChanged);
             // 
             // Adminstration_ComboBox
             // 
@@ -210,6 +201,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(748, 163);
             this.panel1.TabIndex = 30;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(438, 128);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(169, 22);
+            this.textBox1.TabIndex = 44;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Location = new System.Drawing.Point(626, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 25);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "عدد الملفات";
             // 
             // Codes_of_Cases_ComboBox
             // 
@@ -338,6 +349,16 @@
             this.panel2.Size = new System.Drawing.Size(748, 261);
             this.panel2.TabIndex = 31;
             // 
+            // Box_Cord_Label
+            // 
+            this.Box_Cord_Label.AutoSize = true;
+            this.Box_Cord_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Box_Cord_Label.Location = new System.Drawing.Point(515, 227);
+            this.Box_Cord_Label.Name = "Box_Cord_Label";
+            this.Box_Cord_Label.Size = new System.Drawing.Size(32, 25);
+            this.Box_Cord_Label.TabIndex = 44;
+            this.Box_Cord_Label.Text = "....";
+            // 
             // Add_Files_Button
             // 
             this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -387,35 +408,12 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "عنوان العلبة";
             // 
-            // label2
+            // Number_Of_Boxs_TextBox
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(626, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 25);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "عدد الملفات";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(438, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 22);
-            this.textBox1.TabIndex = 44;
-            // 
-            // Box_Cord_Label
-            // 
-            this.Box_Cord_Label.AutoSize = true;
-            this.Box_Cord_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Box_Cord_Label.Location = new System.Drawing.Point(515, 227);
-            this.Box_Cord_Label.Name = "Box_Cord_Label";
-            this.Box_Cord_Label.Size = new System.Drawing.Size(32, 25);
-            this.Box_Cord_Label.TabIndex = 44;
-            this.Box_Cord_Label.Text = "....";
+            this.Number_Of_Boxs_TextBox.Location = new System.Drawing.Point(20, 80);
+            this.Number_Of_Boxs_TextBox.Name = "Number_Of_Boxs_TextBox";
+            this.Number_Of_Boxs_TextBox.Size = new System.Drawing.Size(159, 22);
+            this.Number_Of_Boxs_TextBox.TabIndex = 44;
             // 
             // Add_Transer
             // 
@@ -468,6 +466,6 @@
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label Box_Cord_Label;
-        public System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
+        private System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
     }
 }
