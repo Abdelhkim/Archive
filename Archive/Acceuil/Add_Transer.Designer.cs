@@ -53,7 +53,7 @@
             this.The_Numbers_of_Box_Label = new System.Windows.Forms.Label();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.Insert_Folders_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Add_Files_Button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCards1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -367,7 +367,7 @@
             this.bunifuCards3.BottomSahddow = true;
             this.bunifuCards3.color = System.Drawing.Color.Transparent;
             this.bunifuCards3.Controls.Add(this.Insert_Folders_DataGridView);
-            this.bunifuCards3.Controls.Add(this.bunifuThinButton23);
+            this.bunifuCards3.Controls.Add(this.Add_Files_Button);
             this.bunifuCards3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuCards3.LeftSahddow = false;
             this.bunifuCards3.Location = new System.Drawing.Point(0, 278);
@@ -406,30 +406,31 @@
             this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 254);
             this.Insert_Folders_DataGridView.TabIndex = 24;
             // 
-            // bunifuThinButton23
+            // Add_Files_Button
             // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "إضافة تحويلة";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.bunifuThinButton23.Location = new System.Drawing.Point(279, 267);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(181, 41);
-            this.bunifuThinButton23.TabIndex = 23;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Add_Files_Button.ActiveBorderThickness = 1;
+            this.Add_Files_Button.ActiveCornerRadius = 20;
+            this.Add_Files_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Files_Button.ActiveForecolor = System.Drawing.Color.White;
+            this.Add_Files_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Files_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Add_Files_Button.BackColor = System.Drawing.Color.White;
+            this.Add_Files_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Files_Button.BackgroundImage")));
+            this.Add_Files_Button.ButtonText = "إضافة تحويلة";
+            this.Add_Files_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add_Files_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Files_Button.IdleBorderThickness = 1;
+            this.Add_Files_Button.IdleCornerRadius = 20;
+            this.Add_Files_Button.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Add_Files_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Files_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            this.Add_Files_Button.Location = new System.Drawing.Point(279, 267);
+            this.Add_Files_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.Add_Files_Button.Name = "Add_Files_Button";
+            this.Add_Files_Button.Size = new System.Drawing.Size(181, 41);
+            this.Add_Files_Button.TabIndex = 23;
+            this.Add_Files_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Add_Transer
             // 
@@ -470,7 +471,7 @@
         private System.Windows.Forms.Label Type_of_Box_Label;
         private System.Windows.Forms.Label The_Numbers_of_Box_Label;
         private Bunifu.Framework.UI.BunifuCards bunifuCards3;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Bunifu.Framework.UI.BunifuThinButton2 Add_Files_Button;
         private Bunifu.Framework.UI.BunifuDropdown Codes_of_Cases_ComboBox;
         private System.Windows.Forms.Label Code_of_Case_Label;
         private System.Windows.Forms.Label Date_of_Proce_Label;
