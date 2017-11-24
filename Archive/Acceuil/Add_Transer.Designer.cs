@@ -30,34 +30,33 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Transer));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.Adminstration_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
-            this.Number_Of_Boxs_ComboBox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.Date_of_Transfer_Creation_Label = new System.Windows.Forms.Label();
-            this.Tribunal_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
             this.Tribunal_Label = new System.Windows.Forms.Label();
             this.Number_of_Boxs_Label = new System.Windows.Forms.Label();
             this.Administration_Label = new System.Windows.Forms.Label();
             this.Date_Label = new System.Windows.Forms.Label();
-            this.Number_of_Box_Label = new System.Windows.Forms.Label();
-            this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.Dates_of_Proce_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
-            this.Codes_of_Cases_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Code_of_Case_Label = new System.Windows.Forms.Label();
             this.Date_of_Proce_Label = new System.Windows.Forms.Label();
-            this.Type_of_Box_ComboBox = new Bunifu.Framework.UI.BunifuDropdown();
             this.Type_of_Box_Label = new System.Windows.Forms.Label();
             this.The_Numbers_of_Box_Label = new System.Windows.Forms.Label();
-            this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
+            this.Number_of_Box_Label = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Insert_Folders_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Add_Files_Button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Add_Box_Button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Add_Transfer_Button = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label1 = new System.Windows.Forms.Label();
+            this.Add_Box_Button = new System.Windows.Forms.Button();
+            this.Type_of_Box_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Tribunal_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Adminstration_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Number_Of_Boxs_TextBox = new System.Windows.Forms.TextBox();
+            this.Dates_of_Proce_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Codes_of_Cases_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Add_Transfer_Button = new System.Windows.Forms.Button();
+            this.Add_Files_Button = new System.Windows.Forms.Button();
             this.bunifuCards1.SuspendLayout();
-            this.bunifuCards2.SuspendLayout();
-            this.bunifuCards3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Insert_Folders_DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +66,11 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Transparent;
-            this.bunifuCards1.Controls.Add(this.Adminstration_ComboBox);
-            this.bunifuCards1.Controls.Add(this.Number_Of_Boxs_ComboBox);
-            this.bunifuCards1.Controls.Add(this.Date_of_Transfer_Creation_Label);
             this.bunifuCards1.Controls.Add(this.Add_Transfer_Button);
+            this.bunifuCards1.Controls.Add(this.Number_Of_Boxs_TextBox);
+            this.bunifuCards1.Controls.Add(this.Adminstration_ComboBox);
             this.bunifuCards1.Controls.Add(this.Tribunal_ComboBox);
+            this.bunifuCards1.Controls.Add(this.Date_of_Transfer_Creation_Label);
             this.bunifuCards1.Controls.Add(this.Tribunal_Label);
             this.bunifuCards1.Controls.Add(this.Number_of_Boxs_Label);
             this.bunifuCards1.Controls.Add(this.Administration_Label);
@@ -82,250 +81,155 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(748, 150);
+            this.bunifuCards1.Size = new System.Drawing.Size(748, 173);
             this.bunifuCards1.TabIndex = 0;
-            // 
-            // Adminstration_ComboBox
-            // 
-            this.Adminstration_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Adminstration_ComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.Adminstration_ComboBox.BorderRadius = 3;
-            this.Adminstration_ComboBox.DisabledColor = System.Drawing.Color.Gray;
-            this.Adminstration_ComboBox.ForeColor = System.Drawing.Color.White;
-            this.Adminstration_ComboBox.Items = new string[0];
-            this.Adminstration_ComboBox.Location = new System.Drawing.Point(458, 60);
-            this.Adminstration_ComboBox.Name = "Adminstration_ComboBox";
-            this.Adminstration_ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Adminstration_ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(29)))));
-            this.Adminstration_ComboBox.selectedIndex = -1;
-            this.Adminstration_ComboBox.Size = new System.Drawing.Size(174, 35);
-            this.Adminstration_ComboBox.TabIndex = 22;
-            // 
-            // Number_Of_Boxs_ComboBox
-            // 
-            this.Number_Of_Boxs_ComboBox.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Number_Of_Boxs_ComboBox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Number_Of_Boxs_ComboBox.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Number_Of_Boxs_ComboBox.BorderThickness = 3;
-            this.Number_Of_Boxs_ComboBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Number_Of_Boxs_ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.Number_Of_Boxs_ComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Number_Of_Boxs_ComboBox.isPassword = false;
-            this.Number_Of_Boxs_ComboBox.Location = new System.Drawing.Point(16, 51);
-            this.Number_Of_Boxs_ComboBox.Margin = new System.Windows.Forms.Padding(4);
-            this.Number_Of_Boxs_ComboBox.Name = "Number_Of_Boxs_ComboBox";
-            this.Number_Of_Boxs_ComboBox.Size = new System.Drawing.Size(163, 44);
-            this.Number_Of_Boxs_ComboBox.TabIndex = 21;
-            this.Number_Of_Boxs_ComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuCards1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards1_Paint);
             // 
             // Date_of_Transfer_Creation_Label
             // 
             this.Date_of_Transfer_Creation_Label.AutoSize = true;
             this.Date_of_Transfer_Creation_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date_of_Transfer_Creation_Label.Location = new System.Drawing.Point(119, 13);
+            this.Date_of_Transfer_Creation_Label.Location = new System.Drawing.Point(16, 15);
             this.Date_of_Transfer_Creation_Label.Name = "Date_of_Transfer_Creation_Label";
             this.Date_of_Transfer_Creation_Label.Size = new System.Drawing.Size(60, 24);
             this.Date_of_Transfer_Creation_Label.TabIndex = 19;
             this.Date_of_Transfer_Creation_Label.Text = "label2";
-            // 
-            // Tribunal_ComboBox
-            // 
-            this.Tribunal_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Tribunal_ComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.Tribunal_ComboBox.BorderRadius = 3;
-            this.Tribunal_ComboBox.DisabledColor = System.Drawing.Color.Gray;
-            this.Tribunal_ComboBox.ForeColor = System.Drawing.Color.White;
-            this.Tribunal_ComboBox.Items = new string[0];
-            this.Tribunal_ComboBox.Location = new System.Drawing.Point(458, 13);
-            this.Tribunal_ComboBox.Name = "Tribunal_ComboBox";
-            this.Tribunal_ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Tribunal_ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(29)))));
-            this.Tribunal_ComboBox.selectedIndex = -1;
-            this.Tribunal_ComboBox.Size = new System.Drawing.Size(174, 35);
-            this.Tribunal_ComboBox.TabIndex = 17;
+            this.Date_of_Transfer_Creation_Label.Click += new System.EventHandler(this.Date_of_Transfer_Creation_Label_Click);
             // 
             // Tribunal_Label
             // 
             this.Tribunal_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Tribunal_Label.AutoSize = true;
             this.Tribunal_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Tribunal_Label.Location = new System.Drawing.Point(645, 15);
+            this.Tribunal_Label.Location = new System.Drawing.Point(645, 17);
             this.Tribunal_Label.Name = "Tribunal_Label";
             this.Tribunal_Label.Size = new System.Drawing.Size(90, 25);
             this.Tribunal_Label.TabIndex = 16;
             this.Tribunal_Label.Text = "المحكمة";
+            this.Tribunal_Label.Click += new System.EventHandler(this.Tribunal_Label_Click);
             // 
             // Number_of_Boxs_Label
             // 
             this.Number_of_Boxs_Label.AutoSize = true;
             this.Number_of_Boxs_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Number_of_Boxs_Label.Location = new System.Drawing.Point(186, 66);
+            this.Number_of_Boxs_Label.Location = new System.Drawing.Point(186, 76);
             this.Number_of_Boxs_Label.Name = "Number_of_Boxs_Label";
             this.Number_of_Boxs_Label.Size = new System.Drawing.Size(94, 25);
             this.Number_of_Boxs_Label.TabIndex = 15;
             this.Number_of_Boxs_Label.Text = "عدد العلب";
+            this.Number_of_Boxs_Label.Click += new System.EventHandler(this.Number_of_Boxs_Label_Click);
             // 
             // Administration_Label
             // 
             this.Administration_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Administration_Label.AutoSize = true;
             this.Administration_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Administration_Label.Location = new System.Drawing.Point(650, 66);
+            this.Administration_Label.Location = new System.Drawing.Point(650, 76);
             this.Administration_Label.Name = "Administration_Label";
             this.Administration_Label.Size = new System.Drawing.Size(85, 25);
             this.Administration_Label.TabIndex = 14;
             this.Administration_Label.Text = "المصلحة";
+            this.Administration_Label.Click += new System.EventHandler(this.Administration_Label_Click);
             // 
             // Date_Label
             // 
             this.Date_Label.AutoSize = true;
             this.Date_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Date_Label.Location = new System.Drawing.Point(222, 15);
+            this.Date_Label.Location = new System.Drawing.Point(222, 17);
             this.Date_Label.Name = "Date_Label";
             this.Date_Label.Size = new System.Drawing.Size(58, 25);
             this.Date_Label.TabIndex = 13;
             this.Date_Label.Text = "التاريخ";
+            this.Date_Label.Click += new System.EventHandler(this.Date_Label_Click);
             // 
-            // Number_of_Box_Label
+            // panel1
             // 
-            this.Number_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Number_of_Box_Label.AutoSize = true;
-            this.Number_of_Box_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Number_of_Box_Label.Location = new System.Drawing.Point(645, 23);
-            this.Number_of_Box_Label.Name = "Number_of_Box_Label";
-            this.Number_of_Box_Label.Size = new System.Drawing.Size(87, 25);
-            this.Number_of_Box_Label.TabIndex = 22;
-            this.Number_of_Box_Label.Text = "علبة رقم";
-            // 
-            // bunifuCards2
-            // 
-            this.bunifuCards2.BackColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCards2.BorderRadius = 5;
-            this.bunifuCards2.BottomSahddow = true;
-            this.bunifuCards2.color = System.Drawing.Color.Transparent;
-            this.bunifuCards2.Controls.Add(this.Dates_of_Proce_ComboBox);
-            this.bunifuCards2.Controls.Add(this.Codes_of_Cases_ComboBox);
-            this.bunifuCards2.Controls.Add(this.Code_of_Case_Label);
-            this.bunifuCards2.Controls.Add(this.Date_of_Proce_Label);
-            this.bunifuCards2.Controls.Add(this.Type_of_Box_ComboBox);
-            this.bunifuCards2.Controls.Add(this.Add_Box_Button);
-            this.bunifuCards2.Controls.Add(this.Type_of_Box_Label);
-            this.bunifuCards2.Controls.Add(this.The_Numbers_of_Box_Label);
-            this.bunifuCards2.Controls.Add(this.Number_of_Box_Label);
-            this.bunifuCards2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(0, 150);
-            this.bunifuCards2.Name = "bunifuCards2";
-            this.bunifuCards2.RightSahddow = true;
-            this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(748, 128);
-            this.bunifuCards2.TabIndex = 1;
-            // 
-            // Dates_of_Proce_ComboBox
-            // 
-            this.Dates_of_Proce_ComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.Dates_of_Proce_ComboBox.BorderRadius = 3;
-            this.Dates_of_Proce_ComboBox.DisabledColor = System.Drawing.Color.Gray;
-            this.Dates_of_Proce_ComboBox.ForeColor = System.Drawing.Color.White;
-            this.Dates_of_Proce_ComboBox.Items = new string[0];
-            this.Dates_of_Proce_ComboBox.Location = new System.Drawing.Point(16, 13);
-            this.Dates_of_Proce_ComboBox.Name = "Dates_of_Proce_ComboBox";
-            this.Dates_of_Proce_ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Dates_of_Proce_ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(29)))));
-            this.Dates_of_Proce_ComboBox.selectedIndex = -1;
-            this.Dates_of_Proce_ComboBox.Size = new System.Drawing.Size(163, 35);
-            this.Dates_of_Proce_ComboBox.TabIndex = 28;
-            // 
-            // Codes_of_Cases_ComboBox
-            // 
-            this.Codes_of_Cases_ComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.Codes_of_Cases_ComboBox.BorderRadius = 3;
-            this.Codes_of_Cases_ComboBox.DisabledColor = System.Drawing.Color.Gray;
-            this.Codes_of_Cases_ComboBox.ForeColor = System.Drawing.Color.White;
-            this.Codes_of_Cases_ComboBox.Items = new string[0];
-            this.Codes_of_Cases_ComboBox.Location = new System.Drawing.Point(16, 55);
-            this.Codes_of_Cases_ComboBox.Name = "Codes_of_Cases_ComboBox";
-            this.Codes_of_Cases_ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Codes_of_Cases_ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(29)))));
-            this.Codes_of_Cases_ComboBox.selectedIndex = -1;
-            this.Codes_of_Cases_ComboBox.Size = new System.Drawing.Size(163, 35);
-            this.Codes_of_Cases_ComboBox.TabIndex = 27;
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.Codes_of_Cases_ComboBox);
+            this.panel1.Controls.Add(this.Dates_of_Proce_ComboBox);
+            this.panel1.Controls.Add(this.Type_of_Box_ComboBox);
+            this.panel1.Controls.Add(this.Add_Box_Button);
+            this.panel1.Controls.Add(this.Code_of_Case_Label);
+            this.panel1.Controls.Add(this.Date_of_Proce_Label);
+            this.panel1.Controls.Add(this.Type_of_Box_Label);
+            this.panel1.Controls.Add(this.The_Numbers_of_Box_Label);
+            this.panel1.Controls.Add(this.Number_of_Box_Label);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 173);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(748, 163);
+            this.panel1.TabIndex = 30;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Code_of_Case_Label
             // 
             this.Code_of_Case_Label.AutoSize = true;
             this.Code_of_Case_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Code_of_Case_Label.Location = new System.Drawing.Point(199, 65);
+            this.Code_of_Case_Label.Location = new System.Drawing.Point(199, 67);
             this.Code_of_Case_Label.Name = "Code_of_Case_Label";
             this.Code_of_Case_Label.Size = new System.Drawing.Size(102, 25);
-            this.Code_of_Case_Label.TabIndex = 26;
+            this.Code_of_Case_Label.TabIndex = 35;
             this.Code_of_Case_Label.Text = "رمز القضية";
+            this.Code_of_Case_Label.Click += new System.EventHandler(this.Code_of_Case_Label_Click);
             // 
             // Date_of_Proce_Label
             // 
             this.Date_of_Proce_Label.AutoSize = true;
             this.Date_of_Proce_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Date_of_Proce_Label.Location = new System.Drawing.Point(193, 22);
+            this.Date_of_Proce_Label.Location = new System.Drawing.Point(193, 17);
             this.Date_of_Proce_Label.Name = "Date_of_Proce_Label";
             this.Date_of_Proce_Label.Size = new System.Drawing.Size(108, 25);
-            this.Date_of_Proce_Label.TabIndex = 25;
+            this.Date_of_Proce_Label.TabIndex = 34;
             this.Date_of_Proce_Label.Text = "تاريخ الحكم";
-            // 
-            // Type_of_Box_ComboBox
-            // 
-            this.Type_of_Box_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Type_of_Box_ComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.Type_of_Box_ComboBox.BorderRadius = 3;
-            this.Type_of_Box_ComboBox.DisabledColor = System.Drawing.Color.Gray;
-            this.Type_of_Box_ComboBox.ForeColor = System.Drawing.Color.White;
-            this.Type_of_Box_ComboBox.Items = new string[0];
-            this.Type_of_Box_ComboBox.Location = new System.Drawing.Point(456, 55);
-            this.Type_of_Box_ComboBox.Name = "Type_of_Box_ComboBox";
-            this.Type_of_Box_ComboBox.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Type_of_Box_ComboBox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(29)))));
-            this.Type_of_Box_ComboBox.selectedIndex = -1;
-            this.Type_of_Box_ComboBox.Size = new System.Drawing.Size(174, 35);
-            this.Type_of_Box_ComboBox.TabIndex = 23;
+            this.Date_of_Proce_Label.Click += new System.EventHandler(this.Date_of_Proce_Label_Click);
             // 
             // Type_of_Box_Label
             // 
             this.Type_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Type_of_Box_Label.AutoSize = true;
             this.Type_of_Box_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Type_of_Box_Label.Location = new System.Drawing.Point(633, 65);
+            this.Type_of_Box_Label.Location = new System.Drawing.Point(633, 67);
             this.Type_of_Box_Label.Name = "Type_of_Box_Label";
             this.Type_of_Box_Label.Size = new System.Drawing.Size(99, 25);
-            this.Type_of_Box_Label.TabIndex = 23;
+            this.Type_of_Box_Label.TabIndex = 33;
             this.Type_of_Box_Label.Text = "نوع  العلبة";
+            this.Type_of_Box_Label.Click += new System.EventHandler(this.Type_of_Box_Label_Click);
             // 
             // The_Numbers_of_Box_Label
             // 
             this.The_Numbers_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.The_Numbers_of_Box_Label.AutoSize = true;
             this.The_Numbers_of_Box_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.The_Numbers_of_Box_Label.Location = new System.Drawing.Point(570, 23);
+            this.The_Numbers_of_Box_Label.Location = new System.Drawing.Point(560, 18);
             this.The_Numbers_of_Box_Label.Name = "The_Numbers_of_Box_Label";
             this.The_Numbers_of_Box_Label.Size = new System.Drawing.Size(60, 24);
-            this.The_Numbers_of_Box_Label.TabIndex = 22;
+            this.The_Numbers_of_Box_Label.TabIndex = 29;
             this.The_Numbers_of_Box_Label.Text = "label7";
+            this.The_Numbers_of_Box_Label.Click += new System.EventHandler(this.The_Numbers_of_Box_Label_Click);
             // 
-            // bunifuCards3
+            // Number_of_Box_Label
             // 
-            this.bunifuCards3.BackColor = System.Drawing.Color.White;
-            this.bunifuCards3.BorderRadius = 5;
-            this.bunifuCards3.BottomSahddow = true;
-            this.bunifuCards3.color = System.Drawing.Color.Transparent;
-            this.bunifuCards3.Controls.Add(this.label1);
-            this.bunifuCards3.Controls.Add(this.Insert_Folders_DataGridView);
-            this.bunifuCards3.Controls.Add(this.Add_Files_Button);
-            this.bunifuCards3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuCards3.LeftSahddow = false;
-            this.bunifuCards3.Location = new System.Drawing.Point(0, 278);
-            this.bunifuCards3.Name = "bunifuCards3";
-            this.bunifuCards3.RightSahddow = true;
-            this.bunifuCards3.ShadowDepth = 20;
-            this.bunifuCards3.Size = new System.Drawing.Size(748, 319);
-            this.bunifuCards3.TabIndex = 2;
+            this.Number_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Number_of_Box_Label.AutoSize = true;
+            this.Number_of_Box_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Number_of_Box_Label.Location = new System.Drawing.Point(645, 18);
+            this.Number_of_Box_Label.Name = "Number_of_Box_Label";
+            this.Number_of_Box_Label.Size = new System.Drawing.Size(87, 25);
+            this.Number_of_Box_Label.TabIndex = 30;
+            this.Number_of_Box_Label.Text = "علبة رقم";
+            this.Number_of_Box_Label.Click += new System.EventHandler(this.Number_of_Box_Label_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Add_Files_Button);
+            this.panel2.Controls.Add(this.Insert_Folders_DataGridView);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 336);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(748, 261);
+            this.panel2.TabIndex = 31;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Insert_Folders_DataGridView
             // 
@@ -338,7 +242,7 @@
             this.Insert_Folders_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("GE SS Unique Light", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -353,113 +257,144 @@
             this.Insert_Folders_DataGridView.Location = new System.Drawing.Point(0, 0);
             this.Insert_Folders_DataGridView.Name = "Insert_Folders_DataGridView";
             this.Insert_Folders_DataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 254);
-            this.Insert_Folders_DataGridView.TabIndex = 24;
-            // 
-            // Add_Files_Button
-            // 
-            this.Add_Files_Button.ActiveBorderThickness = 1;
-            this.Add_Files_Button.ActiveCornerRadius = 20;
-            this.Add_Files_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.Add_Files_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Files_Button.BackColor = System.Drawing.Color.White;
-            this.Add_Files_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Files_Button.BackgroundImage")));
-            this.Add_Files_Button.ButtonText = "إضافة الملفات";
-            this.Add_Files_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Files_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.IdleBorderThickness = 1;
-            this.Add_Files_Button.IdleCornerRadius = 20;
-            this.Add_Files_Button.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Add_Files_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Files_Button.Location = new System.Drawing.Point(5, 273);
-            this.Add_Files_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_Files_Button.Name = "Add_Files_Button";
-            this.Add_Files_Button.Size = new System.Drawing.Size(181, 41);
-            this.Add_Files_Button.TabIndex = 23;
-            this.Add_Files_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Add_Box_Button
-            // 
-            this.Add_Box_Button.ActiveBorderThickness = 1;
-            this.Add_Box_Button.ActiveCornerRadius = 20;
-            this.Add_Box_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.Add_Box_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Box_Button.BackColor = System.Drawing.Color.Gainsboro;
-            this.Add_Box_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Box_Button.BackgroundImage")));
-            this.Add_Box_Button.ButtonText = "إضافة العلبة";
-            this.Add_Box_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_Box_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Box_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.IdleBorderThickness = 1;
-            this.Add_Box_Button.IdleCornerRadius = 20;
-            this.Add_Box_Button.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Add_Box_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Box_Button.Location = new System.Drawing.Point(299, 87);
-            this.Add_Box_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_Box_Button.Name = "Add_Box_Button";
-            this.Add_Box_Button.Size = new System.Drawing.Size(142, 41);
-            this.Add_Box_Button.TabIndex = 23;
-            this.Add_Box_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Add_Transfer_Button
-            // 
-            this.Add_Transfer_Button.ActiveBorderThickness = 1;
-            this.Add_Transfer_Button.ActiveCornerRadius = 20;
-            this.Add_Transfer_Button.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.ActiveForecolor = System.Drawing.Color.White;
-            this.Add_Transfer_Button.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Transfer_Button.BackColor = System.Drawing.Color.White;
-            this.Add_Transfer_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Transfer_Button.BackgroundImage")));
-            this.Add_Transfer_Button.ButtonText = "إضافة تحويلة";
-            this.Add_Transfer_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_Transfer_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Transfer_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.IdleBorderThickness = 1;
-            this.Add_Transfer_Button.IdleCornerRadius = 20;
-            this.Add_Transfer_Button.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Add_Transfer_Button.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Add_Transfer_Button.Location = new System.Drawing.Point(279, 107);
-            this.Add_Transfer_Button.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_Transfer_Button.Name = "Add_Transfer_Button";
-            this.Add_Transfer_Button.Size = new System.Drawing.Size(181, 41);
-            this.Add_Transfer_Button.TabIndex = 18;
-            this.Add_Transfer_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 218);
+            this.Insert_Folders_DataGridView.TabIndex = 31;
+            this.Insert_Folders_DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Insert_Folders_DataGridView_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(623, 289);
+            this.label1.Location = new System.Drawing.Point(633, 227);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
-            this.label1.TabIndex = 29;
+            this.label1.TabIndex = 32;
             this.label1.Text = "عنوان العلبة";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Add_Box_Button
+            // 
+            this.Add_Box_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add_Box_Button.Location = new System.Drawing.Point(307, 126);
+            this.Add_Box_Button.Name = "Add_Box_Button";
+            this.Add_Box_Button.Size = new System.Drawing.Size(130, 32);
+            this.Add_Box_Button.TabIndex = 39;
+            this.Add_Box_Button.Text = "إضافة العلبة";
+            this.Add_Box_Button.UseVisualStyleBackColor = true;
+            this.Add_Box_Button.Click += new System.EventHandler(this.Add_Box_Button_Click);
+            // 
+            // Type_of_Box_ComboBox
+            // 
+            this.Type_of_Box_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Type_of_Box_ComboBox.FormattingEnabled = true;
+            this.Type_of_Box_ComboBox.Location = new System.Drawing.Point(451, 72);
+            this.Type_of_Box_ComboBox.Name = "Type_of_Box_ComboBox";
+            this.Type_of_Box_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Type_of_Box_ComboBox.TabIndex = 40;
+            this.Type_of_Box_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Type_of_Box_ComboBox_SelectedIndexChanged);
+            // 
+            // Tribunal_ComboBox
+            // 
+            this.Tribunal_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tribunal_ComboBox.FormattingEnabled = true;
+            this.Tribunal_ComboBox.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"});
+            this.Tribunal_ComboBox.Location = new System.Drawing.Point(438, 17);
+            this.Tribunal_ComboBox.Name = "Tribunal_ComboBox";
+            this.Tribunal_ComboBox.Size = new System.Drawing.Size(182, 24);
+            this.Tribunal_ComboBox.TabIndex = 41;
+            this.Tribunal_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Tribunal_ComboBox_SelectedIndexChanged);
+            // 
+            // Adminstration_ComboBox
+            // 
+            this.Adminstration_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adminstration_ComboBox.FormattingEnabled = true;
+            this.Adminstration_ComboBox.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"});
+            this.Adminstration_ComboBox.Location = new System.Drawing.Point(438, 76);
+            this.Adminstration_ComboBox.Name = "Adminstration_ComboBox";
+            this.Adminstration_ComboBox.Size = new System.Drawing.Size(182, 24);
+            this.Adminstration_ComboBox.TabIndex = 42;
+            this.Adminstration_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Adminstration_ComboBox_SelectedIndexChanged);
+            // 
+            // Number_Of_Boxs_TextBox
+            // 
+            this.Number_Of_Boxs_TextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number_Of_Boxs_TextBox.Location = new System.Drawing.Point(20, 78);
+            this.Number_Of_Boxs_TextBox.Name = "Number_Of_Boxs_TextBox";
+            this.Number_Of_Boxs_TextBox.Size = new System.Drawing.Size(159, 22);
+            this.Number_Of_Boxs_TextBox.TabIndex = 43;
+            // 
+            // Dates_of_Proce_ComboBox
+            // 
+            this.Dates_of_Proce_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dates_of_Proce_ComboBox.FormattingEnabled = true;
+            this.Dates_of_Proce_ComboBox.Location = new System.Drawing.Point(10, 17);
+            this.Dates_of_Proce_ComboBox.Name = "Dates_of_Proce_ComboBox";
+            this.Dates_of_Proce_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Dates_of_Proce_ComboBox.TabIndex = 41;
+            this.Dates_of_Proce_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Dates_of_Proce_ComboBox_SelectedIndexChanged);
+            // 
+            // Codes_of_Cases_ComboBox
+            // 
+            this.Codes_of_Cases_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Codes_of_Cases_ComboBox.FormattingEnabled = true;
+            this.Codes_of_Cases_ComboBox.Location = new System.Drawing.Point(10, 72);
+            this.Codes_of_Cases_ComboBox.Name = "Codes_of_Cases_ComboBox";
+            this.Codes_of_Cases_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Codes_of_Cases_ComboBox.TabIndex = 42;
+            this.Codes_of_Cases_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Codes_of_Cases_ComboBox_SelectedIndexChanged);
+            // 
+            // Add_Transfer_Button
+            // 
+            this.Add_Transfer_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add_Transfer_Button.Location = new System.Drawing.Point(307, 134);
+            this.Add_Transfer_Button.Name = "Add_Transfer_Button";
+            this.Add_Transfer_Button.Size = new System.Drawing.Size(130, 32);
+            this.Add_Transfer_Button.TabIndex = 43;
+            this.Add_Transfer_Button.Text = "إضافة تحويلة";
+            this.Add_Transfer_Button.UseVisualStyleBackColor = true;
+            this.Add_Transfer_Button.Click += new System.EventHandler(this.Add_Transfer_Button_Click);
+            // 
+            // Add_Files_Button
+            // 
+            this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add_Files_Button.Location = new System.Drawing.Point(10, 224);
+            this.Add_Files_Button.Name = "Add_Files_Button";
+            this.Add_Files_Button.Size = new System.Drawing.Size(130, 32);
+            this.Add_Files_Button.TabIndex = 43;
+            this.Add_Files_Button.Text = "إضافة الملفات";
+            this.Add_Files_Button.UseVisualStyleBackColor = true;
+            this.Add_Files_Button.Click += new System.EventHandler(this.Add_Files_Button_Click);
             // 
             // Add_Transer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bunifuCards3);
-            this.Controls.Add(this.bunifuCards2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuCards1);
+            this.Font = new System.Drawing.Font("GE SS Unique Light", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Name = "Add_Transer";
             this.Size = new System.Drawing.Size(748, 597);
+            this.Load += new System.EventHandler(this.Add_Transer_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            this.bunifuCards2.ResumeLayout(false);
-            this.bunifuCards2.PerformLayout();
-            this.bunifuCards3.ResumeLayout(false);
-            this.bunifuCards3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Insert_Folders_DataGridView)).EndInit();
             this.ResumeLayout(false);
 
@@ -467,29 +402,29 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private Bunifu.Framework.UI.BunifuDropdown Adminstration_ComboBox;
-        private Bunifu.Framework.UI.BunifuMetroTextbox Number_Of_Boxs_ComboBox;
-        private System.Windows.Forms.Label Date_of_Transfer_Creation_Label;
-        private Bunifu.Framework.UI.BunifuThinButton2 Add_Transfer_Button;
-        private Bunifu.Framework.UI.BunifuDropdown Tribunal_ComboBox;
-        private System.Windows.Forms.Label Tribunal_Label;
-        private System.Windows.Forms.Label Number_of_Boxs_Label;
-        private System.Windows.Forms.Label Administration_Label;
-        private System.Windows.Forms.Label Date_Label;
-        private System.Windows.Forms.Label Number_of_Box_Label;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards2;
-        private Bunifu.Framework.UI.BunifuDropdown Type_of_Box_ComboBox;
-        private Bunifu.Framework.UI.BunifuThinButton2 Add_Box_Button;
-        private System.Windows.Forms.Label Type_of_Box_Label;
-        private System.Windows.Forms.Label The_Numbers_of_Box_Label;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards3;
-        private Bunifu.Framework.UI.BunifuThinButton2 Add_Files_Button;
-        private Bunifu.Framework.UI.BunifuDropdown Codes_of_Cases_ComboBox;
-        private System.Windows.Forms.Label Code_of_Case_Label;
-        private System.Windows.Forms.Label Date_of_Proce_Label;
-        private Bunifu.Framework.UI.BunifuDropdown Dates_of_Proce_ComboBox;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid Insert_Folders_DataGridView;
-        private System.Windows.Forms.Label label1;
+        public Bunifu.Framework.UI.BunifuCards bunifuCards1;
+        public System.Windows.Forms.Label Date_of_Transfer_Creation_Label;
+        public System.Windows.Forms.Label Tribunal_Label;
+        public System.Windows.Forms.Label Number_of_Boxs_Label;
+        public System.Windows.Forms.Label Administration_Label;
+        public System.Windows.Forms.Label Date_Label;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label Code_of_Case_Label;
+        public System.Windows.Forms.Label Date_of_Proce_Label;
+        public System.Windows.Forms.Label Type_of_Box_Label;
+        public System.Windows.Forms.Label The_Numbers_of_Box_Label;
+        public System.Windows.Forms.Label Number_of_Box_Label;
+        public System.Windows.Forms.Panel panel2;
+        public Bunifu.Framework.UI.BunifuCustomDataGrid Insert_Folders_DataGridView;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button Add_Box_Button;
+        public System.Windows.Forms.ComboBox Type_of_Box_ComboBox;
+        public System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
+        public System.Windows.Forms.ComboBox Adminstration_ComboBox;
+        public System.Windows.Forms.ComboBox Tribunal_ComboBox;
+        public System.Windows.Forms.Button Add_Transfer_Button;
+        public System.Windows.Forms.ComboBox Codes_of_Cases_ComboBox;
+        public System.Windows.Forms.ComboBox Dates_of_Proce_ComboBox;
+        public System.Windows.Forms.Button Add_Files_Button;
     }
 }
