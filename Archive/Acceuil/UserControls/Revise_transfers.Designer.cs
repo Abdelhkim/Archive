@@ -67,7 +67,7 @@
             // Add_Files_Button
             // 
             this.Add_Files_Button.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Add_Files_Button.Location = new System.Drawing.Point(463, 541);
+            this.Add_Files_Button.Location = new System.Drawing.Point(462, 541);
             this.Add_Files_Button.Name = "Add_Files_Button";
             this.Add_Files_Button.Size = new System.Drawing.Size(115, 32);
             this.Add_Files_Button.TabIndex = 26;
@@ -77,7 +77,7 @@
             // Modifier_Verssement
             // 
             this.Modifier_Verssement.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Modifier_Verssement.Location = new System.Drawing.Point(305, 541);
+            this.Modifier_Verssement.Location = new System.Drawing.Point(304, 541);
             this.Modifier_Verssement.Name = "Modifier_Verssement";
             this.Modifier_Verssement.Size = new System.Drawing.Size(152, 32);
             this.Modifier_Verssement.TabIndex = 27;
@@ -87,7 +87,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.Location = new System.Drawing.Point(167, 541);
+            this.button1.Location = new System.Drawing.Point(166, 541);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 32);
             this.button1.TabIndex = 28;

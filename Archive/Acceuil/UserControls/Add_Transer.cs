@@ -40,8 +40,35 @@ namespace Acceuil
             {
                 panel2.Enabled = true;
                 panel1.Enabled = false;
+                Insert_Folders_DataGridView.Rows.Add(int.Parse(Number_of_Folders_Textbox.Text));
             }else
                 MessageBox.Show("Les Champs de Boites ne Doit pas être Vide ");
+        }
+
+        private void Add_Files_Button_Click(object sender, EventArgs e)
+        {
+            bool Etat = true;
+            foreach (DataGridViewRow item in Insert_Folders_DataGridView.Rows)
+            {
+                foreach (DataGridViewCell item1 in item.Cells)
+                {
+                    if (item1.Value == null)
+                    {
+
+                        Etat = true;
+                    }
+                    else
+                    {
+                        Etat = false;
+                    }
+                }
+            }
+            if (Etat == false)
+            {
+                panel1.Enabled = true;
+                panel2.Enabled = false;
+            }else
+                MessageBox.Show("Test");
         }
     }
 }
