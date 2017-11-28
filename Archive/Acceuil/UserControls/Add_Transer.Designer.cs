@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.Number_Of_Boxs_TextBox = new System.Windows.Forms.TextBox();
             this.Add_Transfer_Button = new System.Windows.Forms.Button();
@@ -56,10 +56,10 @@
             this.Box_Cord_Label = new System.Windows.Forms.Label();
             this.Add_Files_Button = new System.Windows.Forms.Button();
             this.Insert_Folders_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -100,6 +100,7 @@
             // 
             // Add_Transfer_Button
             // 
+            this.Add_Transfer_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Add_Transfer_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Add_Transfer_Button.Location = new System.Drawing.Point(307, 134);
             this.Add_Transfer_Button.Name = "Add_Transfer_Button";
@@ -111,6 +112,7 @@
             // 
             // Adminstration_ComboBox
             // 
+            this.Adminstration_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Adminstration_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Adminstration_ComboBox.FormattingEnabled = true;
             this.Adminstration_ComboBox.Items.AddRange(new object[] {
@@ -127,6 +129,7 @@
             // 
             // Tribunal_ComboBox
             // 
+            this.Tribunal_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Tribunal_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tribunal_ComboBox.FormattingEnabled = true;
             this.Tribunal_ComboBox.Items.AddRange(new object[] {
@@ -215,6 +218,7 @@
             // 
             // Number_of_Folders_Textbox
             // 
+            this.Number_of_Folders_Textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Number_of_Folders_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Number_of_Folders_Textbox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Number_of_Folders_Textbox.Location = new System.Drawing.Point(438, 128);
@@ -269,6 +273,7 @@
             // 
             // Type_of_Box_ComboBox
             // 
+            this.Type_of_Box_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Type_of_Box_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Type_of_Box_ComboBox.FormattingEnabled = true;
             this.Type_of_Box_ComboBox.Items.AddRange(new object[] {
@@ -386,20 +391,20 @@
             // 
             this.Insert_Folders_DataGridView.AllowUserToAddRows = false;
             this.Insert_Folders_DataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Insert_Folders_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Insert_Folders_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Insert_Folders_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Insert_Folders_DataGridView.BackgroundColor = System.Drawing.Color.White;
             this.Insert_Folders_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Insert_Folders_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Insert_Folders_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Insert_Folders_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -416,16 +421,6 @@
             this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 218);
             this.Insert_Folders_DataGridView.TabIndex = 31;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(633, 227);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 25);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "عنوان العلبة";
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Column1";
@@ -441,6 +436,16 @@
             this.Column3.HeaderText = "Column3";
             this.Column3.Name = "Column3";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(633, 227);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 25);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "عنوان العلبة";
+            // 
             // Add_Transer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
@@ -453,6 +458,7 @@
             this.Name = "Add_Transer";
             this.Size = new System.Drawing.Size(748, 597);
             this.Load += new System.EventHandler(this.Add_Transer_Load);
+            this.VisibleChanged += new System.EventHandler(this.Add_Transer_VisibleChanged);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -492,9 +498,9 @@
         public System.Windows.Forms.TextBox Number_of_Folders_Textbox;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label Box_Cord_Label;
-        private System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        public System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
     }
 }

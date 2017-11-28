@@ -113,29 +113,39 @@ namespace Acceuil
                 statu = 0;
             }
         }
+        private void Home_Button_Click(object sender, EventArgs e)
+        {
+            if (add_Transer1.panel1.Enabled == true || add_Transer1.panel2.Enabled == true)
+            {
+                MessageBox.Show("لم يتم إكتمال التحويلة");
+            }
+            else
+            {
+                add_Transer1.Visible = false;
+                acceuil_user1.Visible = true;
+                revise_transfers1.Visible = false;
+            }
+            
 
-
-
+        }
         private void Add_Verssement_Button_Click(object sender, EventArgs e)
         {
             add_Transer1.Visible = true;
             acceuil_user1.Visible = false;
             revise_transfers1.Visible = false;
         }
-
-        private void Home_Button_Click(object sender, EventArgs e)
-        {
-            
-            add_Transer1.Visible = false;
-            acceuil_user1.Visible = true;
-            revise_transfers1.Visible = false;
-        }
-
         private void Revise_Transfers_Button_Click(object sender, EventArgs e)
         {
-            add_Transer1.Visible = false;
-            acceuil_user1.Visible = false;
-            revise_transfers1.Visible = true;
+            if (add_Transer1.panel1.Enabled == true || add_Transer1.panel2.Enabled == true)
+            {
+                MessageBox.Show("لم يتم إكتمال التحويلة");
+            }
+            else
+            {
+                add_Transer1.Visible = false;
+                acceuil_user1.Visible = false;
+                revise_transfers1.Visible = true;
+            }
         }
 
         private void Minimise_pictureBox_Click(object sender, EventArgs e)
@@ -156,5 +166,6 @@ namespace Acceuil
             a.Height = 271;
             a.Width = 365;
         }
+        
     }
 }

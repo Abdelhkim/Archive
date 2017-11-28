@@ -22,6 +22,7 @@ namespace Acceuil
             Date_of_Transfer_Creation_Label.Text = DateTime.Now.Day.ToString()+"/"+DateTime.Now.Month.ToString()+"/"+DateTime.Now.Year.ToString();
             panel1.Enabled = false;
             panel2.Enabled = false;
+            
         }
 
         private void Add_Transfer_Button_Click(object sender, EventArgs e)
@@ -44,31 +45,38 @@ namespace Acceuil
             }else
                 MessageBox.Show("Les Champs de Boites ne Doit pas être Vide ");
         }
-
+        int Etat = -1;
         private void Add_Files_Button_Click(object sender, EventArgs e)
         {
-            bool Etat = true;
-            foreach (DataGridViewRow item in Insert_Folders_DataGridView.Rows)
+            foreach (DataGridViewRow Row in Insert_Folders_DataGridView.Rows)
             {
-                foreach (DataGridViewCell item1 in item.Cells)
+                foreach (DataGridViewCell Cell in Row.Cells)
                 {
-                    if (item1.Value == null)
+                    if (Cell.Value == null)
                     {
-
-                        Etat = true;
+                        
+                        MessageBox.Show("erroe");
+                        break;
                     }
                     else
                     {
-                        Etat = false;
+                        panel1.Enabled = true;
+                        panel2.Enabled = false;
+                        Insert_Folders_DataGridView.Rows.Clear();
                     }
                 }
             }
-            if (Etat == false)
-            {
-                panel1.Enabled = true;
-                panel2.Enabled = false;
-            }else
-                MessageBox.Show("Test");
+                
+        }
+
+        private void Add_Transer_VisibleChanged(object sender, EventArgs e)
+        {
+            Number_Of_Boxs_TextBox.Text = string.Empty;
+            Adminstration_ComboBox.SelectedIndex = -1;
+            Codes_of_Cases_ComboBox.SelectedIndex = -1;
+            Tribunal_ComboBox.SelectedIndex = -1;
+            Date_of_Transfer_Creation_Label.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
+            
         }
     }
 }
