@@ -22,6 +22,8 @@ namespace Acceuil
             Date_of_Transfer_Creation_Label.Text = DateTime.Now.Day.ToString()+"/"+DateTime.Now.Month.ToString()+"/"+DateTime.Now.Year.ToString();
             panel1.Enabled = false;
             panel2.Enabled = false;
+            Insert_Folders_DataGridView.EnableHeadersVisualStyles = false;
+            Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(215, 104, 23);
             
         }
 
@@ -45,38 +47,49 @@ namespace Acceuil
             }else
                 MessageBox.Show("Les Champs de Boites ne Doit pas être Vide ");
         }
-        int Etat = -1;
+        
         private void Add_Files_Button_Click(object sender, EventArgs e)
         {
+            int Etat = -1;
             foreach (DataGridViewRow Row in Insert_Folders_DataGridView.Rows)
             {
                 foreach (DataGridViewCell Cell in Row.Cells)
                 {
                     if (Cell.Value == null)
                     {
-                        
-                        MessageBox.Show("erroe");
-                        break;
+                        Etat = 0;
                     }
-                    else
-                    {
-                        panel1.Enabled = true;
-                        panel2.Enabled = false;
-                        Insert_Folders_DataGridView.Rows.Clear();
-                    }
+                    
                 }
             }
-                
+            if (Etat == 0)
+            {
+                MessageBox.Show("يوجد خانة لم يتم إملائها");
+            }
+            if (Etat == -1)
+            {
+                panel1.Enabled = true;
+                panel2.Enabled = false;
+                Insert_Folders_DataGridView.Rows.Clear();
+            }
+              
+
         }
 
         private void Add_Transer_VisibleChanged(object sender, EventArgs e)
         {
-            Number_Of_Boxs_TextBox.Text = string.Empty;
-            Adminstration_ComboBox.SelectedIndex = -1;
-            Codes_of_Cases_ComboBox.SelectedIndex = -1;
-            Tribunal_ComboBox.SelectedIndex = -1;
-            Date_of_Transfer_Creation_Label.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
-            
+            foreach (Control c in bunifuCards1.Controls)
+            {
+                var textBox = c as TextBox;
+                var comboBox = c as ComboBox;
+
+                if (textBox != null)
+                    (textBox).Clear();
+
+                if (comboBox != null)
+                    comboBox.SelectedIndex = -1;
+
+            }
         }
     }
 }

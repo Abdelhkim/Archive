@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.Number_Of_Boxs_TextBox = new System.Windows.Forms.TextBox();
             this.Add_Transfer_Button = new System.Windows.Forms.Button();
@@ -53,12 +54,12 @@
             this.The_Numbers_of_Box_Label = new System.Windows.Forms.Label();
             this.Number_of_Box_Label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Box_Cord_Label = new System.Windows.Forms.Label();
-            this.Add_Files_Button = new System.Windows.Forms.Button();
-            this.Insert_Folders_DataGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Insert_Folders_DataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Box_Cord_Label = new System.Windows.Forms.Label();
+            this.Add_Files_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -355,9 +356,9 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.Insert_Folders_DataGridView);
             this.panel2.Controls.Add(this.Box_Cord_Label);
             this.panel2.Controls.Add(this.Add_Files_Button);
-            this.panel2.Controls.Add(this.Insert_Folders_DataGridView);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,6 +366,59 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(748, 261);
             this.panel2.TabIndex = 31;
+            // 
+            // Insert_Folders_DataGridView
+            // 
+            this.Insert_Folders_DataGridView.AllowUserToAddRows = false;
+            this.Insert_Folders_DataGridView.AllowUserToDeleteRows = false;
+            this.Insert_Folders_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Insert_Folders_DataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.Insert_Folders_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.Insert_Folders_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Insert_Folders_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Insert_Folders_DataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Insert_Folders_DataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Insert_Folders_DataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Insert_Folders_DataGridView.Location = new System.Drawing.Point(0, 0);
+            this.Insert_Folders_DataGridView.Name = "Insert_Folders_DataGridView";
+            this.Insert_Folders_DataGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.Insert_Folders_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 218);
+            this.Insert_Folders_DataGridView.TabIndex = 45;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
             // 
             // Box_Cord_Label
             // 
@@ -386,55 +440,6 @@
             this.Add_Files_Button.Text = "إضافة الملفات";
             this.Add_Files_Button.UseVisualStyleBackColor = true;
             this.Add_Files_Button.Click += new System.EventHandler(this.Add_Files_Button_Click);
-            // 
-            // Insert_Folders_DataGridView
-            // 
-            this.Insert_Folders_DataGridView.AllowUserToAddRows = false;
-            this.Insert_Folders_DataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Insert_Folders_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.Insert_Folders_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Insert_Folders_DataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.Insert_Folders_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Insert_Folders_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.Insert_Folders_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Insert_Folders_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.Insert_Folders_DataGridView.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Insert_Folders_DataGridView.DoubleBuffered = true;
-            this.Insert_Folders_DataGridView.EnableHeadersVisualStyles = false;
-            this.Insert_Folders_DataGridView.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Insert_Folders_DataGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.Insert_Folders_DataGridView.Location = new System.Drawing.Point(0, 0);
-            this.Insert_Folders_DataGridView.Name = "Insert_Folders_DataGridView";
-            this.Insert_Folders_DataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 218);
-            this.Insert_Folders_DataGridView.TabIndex = 31;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
             // 
             // label1
             // 
@@ -485,7 +490,6 @@
         public System.Windows.Forms.Label The_Numbers_of_Box_Label;
         public System.Windows.Forms.Label Number_of_Box_Label;
         public System.Windows.Forms.Panel panel2;
-        public Bunifu.Framework.UI.BunifuCustomDataGrid Insert_Folders_DataGridView;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button Add_Box_Button;
         public System.Windows.Forms.ComboBox Type_of_Box_ComboBox;
@@ -498,9 +502,10 @@
         public System.Windows.Forms.TextBox Number_of_Folders_Textbox;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label Box_Cord_Label;
+        public System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
+        private System.Windows.Forms.DataGridView Insert_Folders_DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        public System.Windows.Forms.TextBox Number_Of_Boxs_TextBox;
     }
 }

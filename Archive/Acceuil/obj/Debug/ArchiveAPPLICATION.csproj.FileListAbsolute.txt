@@ -38,4 +38,5 @@ C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\ArchiveA
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\ArchiveAPPLICATION.csproj.CoreCompileInputs.cache
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.exe
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.pdb
+C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\bin\Debug\Acceuil.pdb
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\ArchiveAPPLICATION.csprojResolveAssemblyReference.cache
