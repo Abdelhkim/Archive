@@ -32,5 +32,25 @@ namespace Acceuil.Properties {
                 return ((string)(this["testConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ACER\\SQLEXPRESS;Initial Catalog=test;Integrated Security=True")]
+        public string testConnectionString1 {
+            get {
+                return ((string)(this["testConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=acer\\sqlexpress;Initial Catalog=Archive_DB;Integrated Security=True")]
+        public string Archive_DBConnectionString {
+            get {
+                return ((string)(this["Archive_DBConnectionString"]));
+            }
+        }
     }
 }

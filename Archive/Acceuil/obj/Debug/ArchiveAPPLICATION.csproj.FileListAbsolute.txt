@@ -39,4 +39,8 @@ C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\ArchiveA
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.exe
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.pdb
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\bin\Debug\Acceuil.pdb
+C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.Revise_Boxs.resources
+C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.Revise_Folders.resources
 C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\ArchiveAPPLICATION.csprojResolveAssemblyReference.cache
+C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.Login.resources
+C:\Users\Abdelhkim\Desktop\ArchiveAPPLICATION\Archive\Acceuil\obj\Debug\Acceuil.ErrorMSG.resources

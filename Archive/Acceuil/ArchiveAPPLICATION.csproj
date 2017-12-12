@@ -66,6 +66,38 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorMSG.Designer.cs">
+      <DependentUpon>ErrorMSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Revise_Folders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Revise_Folders.Designer.cs">
+      <DependentUpon>Revise_Folders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Revise_Boxs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Revise_Boxs.Designer.cs">
+      <DependentUpon>Revise_Boxs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Acceuil_user.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +124,18 @@
     <Compile Include="UserControls\Revise_transfers.Designer.cs">
       <DependentUpon>Revise_transfers.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ErrorMSG.resx">
+      <DependentUpon>ErrorMSG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Revise_Folders.resx">
+      <DependentUpon>Revise_Folders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Revise_Boxs.resx">
+      <DependentUpon>Revise_Boxs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Acceuil_user.resx">
       <DependentUpon>Acceuil_user.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +158,17 @@
     <EmbeddedResource Include="UserControls\Revise_transfers.resx">
       <DependentUpon>Revise_transfers.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -191,7 +246,9 @@
   <ItemGroup>
     <None Include="Resources\boxes_white.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UserControls\Tribunals Cards\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

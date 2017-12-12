@@ -48,9 +48,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.User_PicturBox = new System.Windows.Forms.PictureBox();
             this.User_Background_picturebox = new System.Windows.Forms.PictureBox();
-            this.add_Transer1 = new Acceuil.Add_Transer();
             this.acceuil_user1 = new Acceuil.Acceuil_user();
+            this.revise_Boxs1 = new Acceuil.Revise_Boxs();
             this.revise_transfers1 = new Acceuil.Revise_transfers();
+            this.add_Transer1 = new Acceuil.Add_Transer();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
@@ -163,7 +164,7 @@
             // 
             // Help_Button
             // 
-            this.Help_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Help_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Help_Button.BackColor = System.Drawing.Color.Transparent;
             this.Help_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Help_Button.BorderRadius = 0;
@@ -199,7 +200,7 @@
             // 
             // Logout_Button
             // 
-            this.Logout_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Logout_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Logout_Button.BackColor = System.Drawing.Color.Transparent;
             this.Logout_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Logout_Button.BorderRadius = 0;
@@ -235,7 +236,7 @@
             // 
             // Profile_Button
             // 
-            this.Profile_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Profile_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Profile_Button.BackColor = System.Drawing.Color.Transparent;
             this.Profile_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Profile_Button.BorderRadius = 0;
@@ -271,7 +272,7 @@
             // 
             // Revise_Folders_Button
             // 
-            this.Revise_Folders_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Revise_Folders_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Revise_Folders_Button.BackColor = System.Drawing.Color.Transparent;
             this.Revise_Folders_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Revise_Folders_Button.BorderRadius = 0;
@@ -307,7 +308,7 @@
             // 
             // Revise_Boxs_Button
             // 
-            this.Revise_Boxs_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Revise_Boxs_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Revise_Boxs_Button.BackColor = System.Drawing.Color.Transparent;
             this.Revise_Boxs_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Revise_Boxs_Button.BorderRadius = 0;
@@ -340,10 +341,11 @@
             this.Revise_Boxs_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Revise_Boxs_Button.Textcolor = System.Drawing.Color.White;
             this.Revise_Boxs_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Revise_Boxs_Button.Click += new System.EventHandler(this.Revise_Boxs_Button_Click);
             // 
             // Revise_Transfers_Button
             // 
-            this.Revise_Transfers_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Revise_Transfers_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Revise_Transfers_Button.BackColor = System.Drawing.Color.Transparent;
             this.Revise_Transfers_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Revise_Transfers_Button.BorderRadius = 0;
@@ -380,7 +382,7 @@
             // 
             // Add_Verssement_Button
             // 
-            this.Add_Verssement_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Add_Verssement_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Add_Verssement_Button.BackColor = System.Drawing.Color.Transparent;
             this.Add_Verssement_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Add_Verssement_Button.BorderRadius = 0;
@@ -417,7 +419,7 @@
             // 
             // Home_Button
             // 
-            this.Home_Button.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.Home_Button.Activecolor = System.Drawing.SystemColors.ControlDark;
             this.Home_Button.BackColor = System.Drawing.Color.Transparent;
             this.Home_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Home_Button.BorderRadius = 0;
@@ -510,6 +512,32 @@
             this.User_Background_picturebox.TabIndex = 0;
             this.User_Background_picturebox.TabStop = false;
             // 
+            // acceuil_user1
+            // 
+            this.acceuil_user1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.acceuil_user1.Location = new System.Drawing.Point(0, 62);
+            this.acceuil_user1.Name = "acceuil_user1";
+            this.acceuil_user1.Size = new System.Drawing.Size(748, 597);
+            this.acceuil_user1.TabIndex = 4;
+            // 
+            // revise_Boxs1
+            // 
+            this.revise_Boxs1.BackColor = System.Drawing.Color.White;
+            this.revise_Boxs1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.revise_Boxs1.Location = new System.Drawing.Point(0, 62);
+            this.revise_Boxs1.Name = "revise_Boxs1";
+            this.revise_Boxs1.Size = new System.Drawing.Size(748, 597);
+            this.revise_Boxs1.TabIndex = 7;
+            // 
+            // revise_transfers1
+            // 
+            this.revise_transfers1.BackColor = System.Drawing.Color.White;
+            this.revise_transfers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.revise_transfers1.Location = new System.Drawing.Point(0, 62);
+            this.revise_transfers1.Name = "revise_transfers1";
+            this.revise_transfers1.Size = new System.Drawing.Size(748, 597);
+            this.revise_transfers1.TabIndex = 6;
+            // 
             // add_Transer1
             // 
             this.add_Transer1.BackColor = System.Drawing.Color.White;
@@ -521,32 +549,16 @@
             this.add_Transer1.TabIndex = 5;
             this.add_Transer1.Visible = false;
             // 
-            // acceuil_user1
-            // 
-            this.acceuil_user1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.acceuil_user1.Location = new System.Drawing.Point(0, 62);
-            this.acceuil_user1.Name = "acceuil_user1";
-            this.acceuil_user1.Size = new System.Drawing.Size(748, 597);
-            this.acceuil_user1.TabIndex = 4;
-            // 
-            // revise_transfers1
-            // 
-            this.revise_transfers1.BackColor = System.Drawing.Color.White;
-            this.revise_transfers1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.revise_transfers1.Location = new System.Drawing.Point(0, 62);
-            this.revise_transfers1.Name = "revise_transfers1";
-            this.revise_transfers1.Size = new System.Drawing.Size(748, 597);
-            this.revise_transfers1.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(937, 659);
+            this.Controls.Add(this.acceuil_user1);
+            this.Controls.Add(this.revise_Boxs1);
             this.Controls.Add(this.revise_transfers1);
             this.Controls.Add(this.add_Transer1);
-            this.Controls.Add(this.acceuil_user1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -595,6 +607,7 @@
         private Acceuil_user acceuil_user1;
         private Add_Transer add_Transer1;
         private Revise_transfers revise_transfers1;
+        private Revise_Boxs revise_Boxs1;
     }
 }
 

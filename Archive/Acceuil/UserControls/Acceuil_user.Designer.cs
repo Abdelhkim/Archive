@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acceuil_user));
             this.Acceuil_panel = new System.Windows.Forms.Panel();
+            this.Card_Tribunal_Holder = new Bunifu.Framework.UI.BunifuCards();
             this.Card_Graph_Holder = new Bunifu.Framework.UI.BunifuCards();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.Card_Total_Holder = new Bunifu.Framework.UI.BunifuCards();
@@ -42,10 +43,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Total_Transfers_Gradian_panel = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Card_Tribunal_Holder = new Bunifu.Framework.UI.BunifuCards();
+            this.label1 = new System.Windows.Forms.Label();
             this.Acceuil_panel.SuspendLayout();
             this.Card_Graph_Holder.SuspendLayout();
             this.Card_Total_Holder.SuspendLayout();
@@ -67,7 +67,21 @@
             this.Acceuil_panel.Name = "Acceuil_panel";
             this.Acceuil_panel.Size = new System.Drawing.Size(748, 597);
             this.Acceuil_panel.TabIndex = 5;
-            this.Acceuil_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Acceuil_panel_Paint);
+            // 
+            // Card_Tribunal_Holder
+            // 
+            this.Card_Tribunal_Holder.BackColor = System.Drawing.Color.White;
+            this.Card_Tribunal_Holder.BorderRadius = 0;
+            this.Card_Tribunal_Holder.BottomSahddow = true;
+            this.Card_Tribunal_Holder.color = System.Drawing.Color.Transparent;
+            this.Card_Tribunal_Holder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Card_Tribunal_Holder.LeftSahddow = false;
+            this.Card_Tribunal_Holder.Location = new System.Drawing.Point(236, 296);
+            this.Card_Tribunal_Holder.Name = "Card_Tribunal_Holder";
+            this.Card_Tribunal_Holder.RightSahddow = true;
+            this.Card_Tribunal_Holder.ShadowDepth = 20;
+            this.Card_Tribunal_Holder.Size = new System.Drawing.Size(512, 301);
+            this.Card_Tribunal_Holder.TabIndex = 2;
             // 
             // Card_Graph_Holder
             // 
@@ -84,7 +98,6 @@
             this.Card_Graph_Holder.ShadowDepth = 20;
             this.Card_Graph_Holder.Size = new System.Drawing.Size(512, 296);
             this.Card_Graph_Holder.TabIndex = 1;
-            this.Card_Graph_Holder.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards2_Paint);
             // 
             // cartesianChart1
             // 
@@ -94,11 +107,10 @@
             this.cartesianChart1.Font = new System.Drawing.Font("Bahnschrift Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cartesianChart1.Location = new System.Drawing.Point(0, 0);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cartesianChart1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cartesianChart1.Size = new System.Drawing.Size(512, 296);
             this.cartesianChart1.TabIndex = 1;
             this.cartesianChart1.Text = "cartesianChart1";
-            this.cartesianChart1.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.cartesianChart1_ChildChanged);
             // 
             // Card_Total_Holder
             // 
@@ -117,7 +129,6 @@
             this.Card_Total_Holder.ShadowDepth = 20;
             this.Card_Total_Holder.Size = new System.Drawing.Size(236, 597);
             this.Card_Total_Holder.TabIndex = 0;
-            this.Card_Total_Holder.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards1_Paint);
             // 
             // Total_Boxs_Gradian_Panel
             // 
@@ -136,7 +147,6 @@
             this.Total_Boxs_Gradian_Panel.Quality = 20;
             this.Total_Boxs_Gradian_Panel.Size = new System.Drawing.Size(207, 170);
             this.Total_Boxs_Gradian_Panel.TabIndex = 2;
-            this.Total_Boxs_Gradian_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel2_Paint);
             // 
             // label2
             // 
@@ -149,7 +159,6 @@
             this.label2.Size = new System.Drawing.Size(137, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "مجموع العلب";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
             // 
@@ -162,7 +171,6 @@
             this.label5.Size = new System.Drawing.Size(140, 73);
             this.label5.TabIndex = 5;
             this.label5.Text = "720";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox3
             // 
@@ -174,7 +182,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Total_Folders_Gradian_Panel
             // 
@@ -193,7 +200,6 @@
             this.Total_Folders_Gradian_Panel.Quality = 20;
             this.Total_Folders_Gradian_Panel.Size = new System.Drawing.Size(207, 170);
             this.Total_Folders_Gradian_Panel.TabIndex = 2;
-            this.Total_Folders_Gradian_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel3_Paint);
             // 
             // label3
             // 
@@ -206,7 +212,6 @@
             this.label3.Size = new System.Drawing.Size(156, 28);
             this.label3.TabIndex = 5;
             this.label3.Text = "مجموع الملفات";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label6
             // 
@@ -219,7 +224,6 @@
             this.label6.Size = new System.Drawing.Size(176, 73);
             this.label6.TabIndex = 6;
             this.label6.Text = "1820";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox4
             // 
@@ -231,7 +235,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Total_Transfers_Gradian_panel
             // 
@@ -249,20 +252,6 @@
             this.Total_Transfers_Gradian_panel.Quality = 20;
             this.Total_Transfers_Gradian_panel.Size = new System.Drawing.Size(207, 170);
             this.Total_Transfers_Gradian_panel.TabIndex = 1;
-            this.Total_Transfers_Gradian_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(20, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 28);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "مجموع التحويلات";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -275,7 +264,6 @@
             this.label4.Size = new System.Drawing.Size(140, 73);
             this.label4.TabIndex = 4;
             this.label4.Text = "120";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox2
             // 
@@ -287,23 +275,18 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Card_Tribunal_Holder
+            // label1
             // 
-            this.Card_Tribunal_Holder.BackColor = System.Drawing.Color.White;
-            this.Card_Tribunal_Holder.BorderRadius = 0;
-            this.Card_Tribunal_Holder.BottomSahddow = true;
-            this.Card_Tribunal_Holder.color = System.Drawing.Color.Transparent;
-            this.Card_Tribunal_Holder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Card_Tribunal_Holder.LeftSahddow = false;
-            this.Card_Tribunal_Holder.Location = new System.Drawing.Point(236, 296);
-            this.Card_Tribunal_Holder.Name = "Card_Tribunal_Holder";
-            this.Card_Tribunal_Holder.RightSahddow = true;
-            this.Card_Tribunal_Holder.ShadowDepth = 20;
-            this.Card_Tribunal_Holder.Size = new System.Drawing.Size(512, 301);
-            this.Card_Tribunal_Holder.TabIndex = 2;
-            this.Card_Tribunal_Holder.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards3_Paint);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(19, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 28);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "مجموع التحويلات";
             // 
             // Acceuil_user
             // 
@@ -344,9 +327,9 @@
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.PictureBox pictureBox4;
         public Bunifu.Framework.UI.BunifuGradientPanel Total_Transfers_Gradian_panel;
-        public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.PictureBox pictureBox2;
         public Bunifu.Framework.UI.BunifuCards Card_Tribunal_Holder;
+        public System.Windows.Forms.Label label1;
     }
 }
