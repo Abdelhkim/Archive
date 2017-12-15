@@ -21,6 +21,13 @@ namespace Acceuil
             InitializeComponent();
         }
         int TagMove, MvalX, MvalY;
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            LoadingBAR.Visible = false;
+            this.Opacity = 0.0;
+            Timer_FadeIN.Start();
+        }
         #region mouvment_code
         private void Login_MouseMove(object sender, MouseEventArgs e)
         {
@@ -78,8 +85,43 @@ namespace Acceuil
             MvalY = e.Y;
         }
         #endregion
+        private void Username_TextBox_OnValueChanged(object sender, EventArgs e)
+        {
+            Username_TextBox.BorderColorFocused = Color.SeaGreen;
+            Password_TextBox.BorderColorFocused = Color.SeaGreen;
+            Username_TextBox.BorderColorIdle = Color.SeaGreen;
+            Password_TextBox.BorderColorIdle = Color.SeaGreen;
+        }
+
+        private void Password_TextBox_OnValueChanged(object sender, EventArgs e)
+        {
+            Username_TextBox.BorderColorFocused = Color.SeaGreen;
+            Password_TextBox.BorderColorFocused = Color.SeaGreen;
+            Username_TextBox.BorderColorIdle = Color.SeaGreen;
+            Password_TextBox.BorderColorIdle = Color.SeaGreen;
+        }
+
+        private void Timer_FadeIN_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity <= 0.99)
+            {
+                this.Opacity += 0.5;
+                Timer_FadeIN.Start();
+            }
+            else
+            {
+                Timer_FadeIN.Stop();
+            }
+        }
+
         private void Login_Button_Click(object sender, EventArgs e)
         {
+            
+            LoadingBAR.Visible = true;
+            for (int i = 0; i < 100; i++)
+            {
+                LoadingBAR.Value += 1;
+            }
             Program.Connection.Open();
             Program.CMD = new SqlCommand("select ID_Employe,Username,Password,Type_Compte from Employes where Username ='"+Username_TextBox.Text+"' AND Password='"+Password_TextBox.Text+"'",Program.Connection);
             Program.DataReader = Program.CMD.ExecuteReader();
@@ -93,6 +135,7 @@ namespace Acceuil
                 }
                 if (Convert.ToBoolean(Program.Table.Rows[0][3]) == false)
                 {
+                    
                     Employe_ID = int.Parse(Program.Table.Rows[0][0].ToString());
                     Form1 F = new Form1();
                     F.Show();
@@ -109,6 +152,12 @@ namespace Acceuil
             }
             
             Program.Connection.Close();
+            Program.DataReader.Close();
+            LoadingBAR.Visible = false;
+            if (LoadingBAR.Value == 100)
+            {
+                LoadingBAR.Value = 0;
+            }
         }
 
         private void Close_Login_PictureBox_Click(object sender, EventArgs e)

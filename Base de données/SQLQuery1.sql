@@ -1,6 +1,6 @@
 ﻿drop Database ARCHIVE_MJ
 create database ARCHIVE_MJ COLLATE Arabic_CI_AI
-
+set dateformat dmy
 create table Employes(
 	ID_Employe				int Primary key not null,
 	Nom						varchar(255),
@@ -32,7 +32,8 @@ create table CJ(
 	Code_TPI				varchar(30) foreign key references TPI(Code_Tribunal_TPI) on delete cascade
 )
 go
-delete Verssements
+insert into Verssements(Code_Tribunal,Nom_Administration,Responsable,Employe_ID,Date_Vessement,Nombre_Box,Metrage,Stocker,Date_Stockage)
+select * from Verssements
 DBCC CHECKIDENT ('Verssements',RESEED,0)
 select * from Verssements
 select top(1)* from Verssements order by Numero_Verssement desc
@@ -178,5 +179,9 @@ alter table boite
 update boite set boite.id_adress = Addressage.Id_Address
 		from boite inner join Addressage on boite.adresse = Addressage.Position
 select * from TPI
-
-المحكمة  بمراكش
+Select  top(1)Numero_Verssement from Verssements where Employe_ID = 2 order by Numero_Verssement desc
+select * from Addressage where Libre_Etat = 0
+insert into Carton(Numero_Verssement,Type_Archive,Numero_Box,Id_Address,Code_Proce,Anné_proce)
+select * from Dossier
+insert into Dossier(Id_Dossier,Numero_Dossier,Anne_Ouverture,Numero_jujment,description,Numero_Ver,Type_Archi,Numero_BoX) Values(@id_Dossier,@Numero_Dossier,@Ann_over,@N_jujment,@Description,@Numero_V,@T_Arch,N_Box)
+select * from Addressage

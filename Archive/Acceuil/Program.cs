@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acceuil.DataSet1TableAdapters;
+using ArchiveAPPLICATION.DataSet1TableAdapters;
 using System.Data;
 
 namespace Acceuil

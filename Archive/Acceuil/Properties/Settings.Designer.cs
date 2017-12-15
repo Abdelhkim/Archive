@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Acceuil.Properties {
+namespace ArchiveAPPLICATION.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

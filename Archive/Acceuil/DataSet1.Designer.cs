@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Acceuil {
+namespace ArchiveAPPLICATION {
     
     
     /// <summary>
@@ -1579,7 +1579,7 @@ namespace Acceuil {
         }
     }
 }
-namespace Acceuil.DataSet1TableAdapters {
+namespace ArchiveAPPLICATION.DataSet1TableAdapters {
     
     
     /// <summary>
@@ -1739,7 +1739,7 @@ SELECT Code_Tribunal_TCA, Nom_tribunal_TCA FROM TCA WHERE (Code_Tribunal_TCA = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Acceuil.Properties.Settings.Default.Archive_DBConnectionString;
+            this._connection.ConnectionString = global::ArchiveAPPLICATION.Properties.Settings.Default.Archive_DBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2092,7 +2092,7 @@ SELECT Code_Tribunal_TPI, Nom_Tribunal_TPI, Code_TCA FROM TPI WHERE (Code_Tribun
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Acceuil.Properties.Settings.Default.Archive_DBConnectionString;
+            this._connection.ConnectionString = global::ArchiveAPPLICATION.Properties.Settings.Default.Archive_DBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2472,7 +2472,7 @@ SELECT Code_Tribunal_CJ, Nom_Tribunal_CJ, Code_TPI FROM CJ WHERE (Code_Tribunal_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Acceuil.Properties.Settings.Default.Archive_DBConnectionString;
+            this._connection.ConnectionString = global::ArchiveAPPLICATION.Properties.Settings.Default.Archive_DBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

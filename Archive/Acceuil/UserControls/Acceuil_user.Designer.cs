@@ -175,7 +175,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Acceuil.Properties.Resources.boxes_white;
+            this.pictureBox3.Image = global::ArchiveAPPLICATION.Properties.Resources.boxes_white;
             this.pictureBox3.Location = new System.Drawing.Point(68, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(71, 71);
@@ -228,7 +228,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Acceuil.Properties.Resources.Folders_white;
+            this.pictureBox4.Image = global::ArchiveAPPLICATION.Properties.Resources.Folders_white;
             this.pictureBox4.Location = new System.Drawing.Point(69, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(71, 71);
@@ -268,7 +268,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Acceuil.Properties.Resources.man_dragingBoxs_white;
+            this.pictureBox2.Image = global::ArchiveAPPLICATION.Properties.Resources.man_dragingBoxs_white;
             this.pictureBox2.Location = new System.Drawing.Point(67, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 71);

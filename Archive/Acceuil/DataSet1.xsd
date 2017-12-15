@@ -4,8 +4,8 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="testConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="testConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Acceuil.Properties.Settings.GlobalReference.Default.testConnectionString1" Provider="System.Data.SqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Archive_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Archive_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Acceuil.Properties.Settings.GlobalReference.Default.Archive_DBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="testConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="testConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ArchiveAPPLICATION.Properties.Settings.GlobalReference.Default.testConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Archive_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Archive_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ArchiveAPPLICATION.Properties.Settings.GlobalReference.Default.Archive_DBConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TCATableAdapter" GeneratorDataComponentClassName="TCATableAdapter" Name="TCA" UserDataComponentName="TCATableAdapter">
@@ -180,7 +180,7 @@ SELECT Code_Tribunal_CJ, Nom_Tribunal_CJ, Code_TPI FROM CJ WHERE (Code_Tribunal_
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TCA" msprop:Generator_TableClassName="TCADataTable" msprop:Generator_TableVarName="tableTCA" msprop:Generator_TablePropName="TCA" msprop:Generator_RowDeletingName="TCARowDeleting" msprop:Generator_RowChangingName="TCARowChanging" msprop:Generator_RowEvHandlerName="TCARowChangeEventHandler" msprop:Generator_RowDeletedName="TCARowDeleted" msprop:Generator_UserTableName="TCA" msprop:Generator_RowChangedName="TCARowChanged" msprop:Generator_RowEvArgName="TCARowChangeEvent" msprop:Generator_RowClassName="TCARow">
+        <xs:element name="TCA" msprop:Generator_TableClassName="TCADataTable" msprop:Generator_TableVarName="tableTCA" msprop:Generator_RowChangedName="TCARowChanged" msprop:Generator_TablePropName="TCA" msprop:Generator_RowDeletingName="TCARowDeleting" msprop:Generator_RowChangingName="TCARowChanging" msprop:Generator_RowEvHandlerName="TCARowChangeEventHandler" msprop:Generator_RowDeletedName="TCARowDeleted" msprop:Generator_RowClassName="TCARow" msprop:Generator_UserTableName="TCA" msprop:Generator_RowEvArgName="TCARowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Code_Tribunal_TCA" msprop:Generator_ColumnVarNameInTable="columnCode_Tribunal_TCA" msprop:Generator_ColumnPropNameInRow="Code_Tribunal_TCA" msprop:Generator_ColumnPropNameInTable="Code_Tribunal_TCAColumn" msprop:Generator_UserColumnName="Code_Tribunal_TCA">
@@ -200,7 +200,7 @@ SELECT Code_Tribunal_CJ, Nom_Tribunal_CJ, Code_TPI FROM CJ WHERE (Code_Tribunal_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TPI" msprop:Generator_TableClassName="TPIDataTable" msprop:Generator_TableVarName="tableTPI" msprop:Generator_TablePropName="TPI" msprop:Generator_RowDeletingName="TPIRowDeleting" msprop:Generator_RowChangingName="TPIRowChanging" msprop:Generator_RowEvHandlerName="TPIRowChangeEventHandler" msprop:Generator_RowDeletedName="TPIRowDeleted" msprop:Generator_UserTableName="TPI" msprop:Generator_RowChangedName="TPIRowChanged" msprop:Generator_RowEvArgName="TPIRowChangeEvent" msprop:Generator_RowClassName="TPIRow">
+        <xs:element name="TPI" msprop:Generator_TableClassName="TPIDataTable" msprop:Generator_TableVarName="tableTPI" msprop:Generator_RowChangedName="TPIRowChanged" msprop:Generator_TablePropName="TPI" msprop:Generator_RowDeletingName="TPIRowDeleting" msprop:Generator_RowChangingName="TPIRowChanging" msprop:Generator_RowEvHandlerName="TPIRowChangeEventHandler" msprop:Generator_RowDeletedName="TPIRowDeleted" msprop:Generator_RowClassName="TPIRow" msprop:Generator_UserTableName="TPI" msprop:Generator_RowEvArgName="TPIRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Code_Tribunal_TPI" msprop:Generator_ColumnVarNameInTable="columnCode_Tribunal_TPI" msprop:Generator_ColumnPropNameInRow="Code_Tribunal_TPI" msprop:Generator_ColumnPropNameInTable="Code_Tribunal_TPIColumn" msprop:Generator_UserColumnName="Code_Tribunal_TPI">
@@ -227,7 +227,7 @@ SELECT Code_Tribunal_CJ, Nom_Tribunal_CJ, Code_TPI FROM CJ WHERE (Code_Tribunal_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CJ" msprop:Generator_TableClassName="CJDataTable" msprop:Generator_TableVarName="tableCJ" msprop:Generator_TablePropName="CJ" msprop:Generator_RowDeletingName="CJRowDeleting" msprop:Generator_RowChangingName="CJRowChanging" msprop:Generator_RowEvHandlerName="CJRowChangeEventHandler" msprop:Generator_RowDeletedName="CJRowDeleted" msprop:Generator_UserTableName="CJ" msprop:Generator_RowChangedName="CJRowChanged" msprop:Generator_RowEvArgName="CJRowChangeEvent" msprop:Generator_RowClassName="CJRow">
+        <xs:element name="CJ" msprop:Generator_TableClassName="CJDataTable" msprop:Generator_TableVarName="tableCJ" msprop:Generator_RowChangedName="CJRowChanged" msprop:Generator_TablePropName="CJ" msprop:Generator_RowDeletingName="CJRowDeleting" msprop:Generator_RowChangingName="CJRowChanging" msprop:Generator_RowEvHandlerName="CJRowChangeEventHandler" msprop:Generator_RowDeletedName="CJRowDeleted" msprop:Generator_RowClassName="CJRow" msprop:Generator_UserTableName="CJ" msprop:Generator_RowEvArgName="CJRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Code_Tribunal_CJ" msprop:Generator_ColumnVarNameInTable="columnCode_Tribunal_CJ" msprop:Generator_ColumnPropNameInRow="Code_Tribunal_CJ" msprop:Generator_ColumnPropNameInTable="Code_Tribunal_CJColumn" msprop:Generator_UserColumnName="Code_Tribunal_CJ">
@@ -271,8 +271,8 @@ SELECT Code_Tribunal_CJ, Nom_Tribunal_CJ, Code_TPI FROM CJ WHERE (Code_Tribunal_
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__TPI__Code_TCA__1DB06A4F" msdata:parent="TCA" msdata:child="TPI" msdata:parentkey="Code_Tribunal_TCA" msdata:childkey="Code_TCA" msprop:Generator_UserChildTable="TPI" msprop:Generator_ChildPropName="GetTPIRows" msprop:Generator_UserRelationName="FK__TPI__Code_TCA__1DB06A4F" msprop:Generator_ParentPropName="TCARow" msprop:Generator_RelationVarName="relationFK__TPI__Code_TCA__1DB06A4F" msprop:Generator_UserParentTable="TCA" />
-      <msdata:Relationship name="FK__CJ__Code_TPI__208CD6FA" msdata:parent="TPI" msdata:child="CJ" msdata:parentkey="Code_Tribunal_TPI" msdata:childkey="Code_TPI" msprop:Generator_UserChildTable="CJ" msprop:Generator_ChildPropName="GetCJRows" msprop:Generator_UserRelationName="FK__CJ__Code_TPI__208CD6FA" msprop:Generator_ParentPropName="TPIRow" msprop:Generator_RelationVarName="relationFK__CJ__Code_TPI__208CD6FA" msprop:Generator_UserParentTable="TPI" />
+      <msdata:Relationship name="FK__TPI__Code_TCA__1DB06A4F" msdata:parent="TCA" msdata:child="TPI" msdata:parentkey="Code_Tribunal_TCA" msdata:childkey="Code_TCA" msprop:Generator_UserChildTable="TPI" msprop:Generator_ChildPropName="GetTPIRows" msprop:Generator_UserRelationName="FK__TPI__Code_TCA__1DB06A4F" msprop:Generator_RelationVarName="relationFK__TPI__Code_TCA__1DB06A4F" msprop:Generator_UserParentTable="TCA" msprop:Generator_ParentPropName="TCARow" />
+      <msdata:Relationship name="FK__CJ__Code_TPI__208CD6FA" msdata:parent="TPI" msdata:child="CJ" msdata:parentkey="Code_Tribunal_TPI" msdata:childkey="Code_TPI" msprop:Generator_UserChildTable="CJ" msprop:Generator_ChildPropName="GetCJRows" msprop:Generator_UserRelationName="FK__CJ__Code_TPI__208CD6FA" msprop:Generator_RelationVarName="relationFK__CJ__Code_TPI__208CD6FA" msprop:Generator_UserParentTable="TPI" msprop:Generator_ParentPropName="TPIRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

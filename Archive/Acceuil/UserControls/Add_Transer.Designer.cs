@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Responsable_ComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,21 +53,20 @@
             this.Tribunal_Label = new System.Windows.Forms.Label();
             this.Administration_Label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Transfer_Type_NumeroB_Label = new System.Windows.Forms.Label();
             this.Insert_Folders_DataGridView = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Box_Cord_Label = new System.Windows.Forms.Label();
+            this.Id_Dossier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero_Dossier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Anne_Overture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero_jujment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Add_Files_Button = new System.Windows.Forms.Button();
+            this.Box_Cord_Label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Box_Archive_update_Button = new System.Windows.Forms.Button();
             this.Type_of_Archive_DataLabel = new System.Windows.Forms.Label();
             this.Date_Jujment_NumiricUpDown = new System.Windows.Forms.NumericUpDown();
-            this.Imprimer_Box_Tag = new System.Windows.Forms.Button();
-            this.Number_of_Folders_Textbox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Codes_of_Cases_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Codes_of_Proces_ComboBox = new System.Windows.Forms.ComboBox();
             this.Add_Box_Button = new System.Windows.Forms.Button();
             this.Code_of_Case_Label = new System.Windows.Forms.Label();
             this.Date_of_Proce_Label = new System.Windows.Forms.Label();
@@ -113,21 +112,21 @@
             // Responsable_ComboBox
             // 
             this.Responsable_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Responsable_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Responsable_ComboBox.Font = new System.Drawing.Font("GE SS Unique Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Responsable_ComboBox.FormattingEnabled = true;
             this.Responsable_ComboBox.Items.AddRange(new object[] {
             "الرئاسة",
             "النيابة العامة"});
             this.Responsable_ComboBox.Location = new System.Drawing.Point(10, 124);
             this.Responsable_ComboBox.Name = "Responsable_ComboBox";
-            this.Responsable_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Responsable_ComboBox.Size = new System.Drawing.Size(169, 25);
             this.Responsable_ComboBox.TabIndex = 73;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(240, 123);
+            this.label3.Location = new System.Drawing.Point(235, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 25);
             this.label3.TabIndex = 72;
@@ -200,10 +199,10 @@
             // 
             this.Longeur_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Longeur_Label.AutoSize = true;
-            this.Longeur_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Longeur_Label.Location = new System.Drawing.Point(522, 113);
+            this.Longeur_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Longeur_Label.Location = new System.Drawing.Point(523, 113);
             this.Longeur_Label.Name = "Longeur_Label";
-            this.Longeur_Label.Size = new System.Drawing.Size(25, 24);
+            this.Longeur_Label.Size = new System.Drawing.Size(25, 23);
             this.Longeur_Label.TabIndex = 66;
             this.Longeur_Label.Text = "...";
             // 
@@ -211,10 +210,10 @@
             // 
             this.Date_of_Transfer_Creation_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Date_of_Transfer_Creation_Label.AutoSize = true;
-            this.Date_of_Transfer_Creation_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date_of_Transfer_Creation_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date_of_Transfer_Creation_Label.Location = new System.Drawing.Point(487, 43);
             this.Date_of_Transfer_Creation_Label.Name = "Date_of_Transfer_Creation_Label";
-            this.Date_of_Transfer_Creation_Label.Size = new System.Drawing.Size(20, 24);
+            this.Date_of_Transfer_Creation_Label.Size = new System.Drawing.Size(20, 23);
             this.Date_of_Transfer_Creation_Label.TabIndex = 64;
             this.Date_of_Transfer_Creation_Label.Text = "..";
             // 
@@ -254,7 +253,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label5.Location = new System.Drawing.Point(206, 55);
+            this.label5.Location = new System.Drawing.Point(201, 55);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 25);
             this.label5.TabIndex = 59;
@@ -264,10 +263,10 @@
             // 
             this.Numero_Du_Transsmition_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Numero_Du_Transsmition_Label.AutoSize = true;
-            this.Numero_Du_Transsmition_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Numero_Du_Transsmition_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Numero_Du_Transsmition_Label.Location = new System.Drawing.Point(547, 8);
             this.Numero_Du_Transsmition_Label.Name = "Numero_Du_Transsmition_Label";
-            this.Numero_Du_Transsmition_Label.Size = new System.Drawing.Size(25, 24);
+            this.Numero_Du_Transsmition_Label.Size = new System.Drawing.Size(25, 23);
             this.Numero_Du_Transsmition_Label.TabIndex = 55;
             this.Numero_Du_Transsmition_Label.Text = "...";
             // 
@@ -297,18 +296,18 @@
             // Adminstration_ComboBox
             // 
             this.Adminstration_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Adminstration_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adminstration_ComboBox.Font = new System.Drawing.Font("GE SS Unique Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Adminstration_ComboBox.FormattingEnabled = true;
             this.Adminstration_ComboBox.Location = new System.Drawing.Point(10, 91);
             this.Adminstration_ComboBox.Name = "Adminstration_ComboBox";
-            this.Adminstration_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Adminstration_ComboBox.Size = new System.Drawing.Size(169, 25);
             this.Adminstration_ComboBox.TabIndex = 51;
             this.Adminstration_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Adminstration_ComboBox_SelectedIndexChanged);
             // 
             // Tribunal_ComboBox
             // 
             this.Tribunal_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Tribunal_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tribunal_ComboBox.Font = new System.Drawing.Font("GE SS Unique Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Tribunal_ComboBox.FormattingEnabled = true;
             this.Tribunal_ComboBox.Items.AddRange(new object[] {
             "محكمة الاستئناف ",
@@ -323,7 +322,7 @@
             "المركز الجهوي للحفظ بمركش"});
             this.Tribunal_ComboBox.Location = new System.Drawing.Point(10, 19);
             this.Tribunal_ComboBox.Name = "Tribunal_ComboBox";
-            this.Tribunal_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Tribunal_ComboBox.Size = new System.Drawing.Size(169, 25);
             this.Tribunal_ComboBox.TabIndex = 50;
             this.Tribunal_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Tribunal_ComboBox_SelectedIndexChanged);
             // 
@@ -331,7 +330,7 @@
             // 
             this.Tribunal_Label.AutoSize = true;
             this.Tribunal_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Tribunal_Label.Location = new System.Drawing.Point(240, 21);
+            this.Tribunal_Label.Location = new System.Drawing.Point(235, 19);
             this.Tribunal_Label.Name = "Tribunal_Label";
             this.Tribunal_Label.Size = new System.Drawing.Size(90, 25);
             this.Tribunal_Label.TabIndex = 48;
@@ -341,7 +340,7 @@
             // 
             this.Administration_Label.AutoSize = true;
             this.Administration_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Administration_Label.Location = new System.Drawing.Point(245, 89);
+            this.Administration_Label.Location = new System.Drawing.Point(240, 91);
             this.Administration_Label.Name = "Administration_Label";
             this.Administration_Label.Size = new System.Drawing.Size(85, 25);
             this.Administration_Label.TabIndex = 46;
@@ -349,11 +348,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.Transfer_Type_NumeroB_Label);
             this.panel2.Controls.Add(this.Insert_Folders_DataGridView);
-            this.panel2.Controls.Add(this.Box_Cord_Label);
             this.panel2.Controls.Add(this.Add_Files_Button);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 368);
@@ -361,20 +357,8 @@
             this.panel2.Size = new System.Drawing.Size(748, 229);
             this.panel2.TabIndex = 34;
             // 
-            // Transfer_Type_NumeroB_Label
-            // 
-            this.Transfer_Type_NumeroB_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Transfer_Type_NumeroB_Label.AutoSize = true;
-            this.Transfer_Type_NumeroB_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Transfer_Type_NumeroB_Label.Location = new System.Drawing.Point(329, 185);
-            this.Transfer_Type_NumeroB_Label.Name = "Transfer_Type_NumeroB_Label";
-            this.Transfer_Type_NumeroB_Label.Size = new System.Drawing.Size(112, 25);
-            this.Transfer_Type_NumeroB_Label.TabIndex = 46;
-            this.Transfer_Type_NumeroB_Label.Text = "عنوان العلبة";
-            // 
             // Insert_Folders_DataGridView
             // 
-            this.Insert_Folders_DataGridView.AllowUserToAddRows = false;
             this.Insert_Folders_DataGridView.AllowUserToDeleteRows = false;
             this.Insert_Folders_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -382,61 +366,62 @@
             this.Insert_Folders_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Insert_Folders_DataGridView.BackgroundColor = System.Drawing.Color.White;
             this.Insert_Folders_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.Insert_Folders_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Insert_Folders_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Nom,
-            this.Prenom});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Insert_Folders_DataGridView.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Id_Dossier,
+            this.Numero_Dossier,
+            this.Anne_Overture,
+            this.Numero_jujment,
+            this.Description});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Insert_Folders_DataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.Insert_Folders_DataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Insert_Folders_DataGridView.Location = new System.Drawing.Point(0, 0);
             this.Insert_Folders_DataGridView.Name = "Insert_Folders_DataGridView";
             this.Insert_Folders_DataGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.Insert_Folders_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.Insert_Folders_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 176);
             this.Insert_Folders_DataGridView.TabIndex = 45;
             // 
-            // Id
+            // Id_Dossier
             // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
+            this.Id_Dossier.HeaderText = "الرقم الترتيبي ";
+            this.Id_Dossier.Name = "Id_Dossier";
             // 
-            // Nom
+            // Numero_Dossier
             // 
-            this.Nom.HeaderText = "Nom";
-            this.Nom.Name = "Nom";
+            this.Numero_Dossier.HeaderText = "رقم الملف";
+            this.Numero_Dossier.Name = "Numero_Dossier";
             // 
-            // Prenom
+            // Anne_Overture
             // 
-            this.Prenom.HeaderText = "Prenom";
-            this.Prenom.Name = "Prenom";
+            this.Anne_Overture.HeaderText = "سنة فتح الملف";
+            this.Anne_Overture.Name = "Anne_Overture";
             // 
-            // Box_Cord_Label
+            // Numero_jujment
             // 
-            this.Box_Cord_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Box_Cord_Label.AutoSize = true;
-            this.Box_Cord_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Box_Cord_Label.Location = new System.Drawing.Point(515, 185);
-            this.Box_Cord_Label.Name = "Box_Cord_Label";
-            this.Box_Cord_Label.Size = new System.Drawing.Size(32, 25);
-            this.Box_Cord_Label.TabIndex = 44;
-            this.Box_Cord_Label.Text = "....";
+            this.Numero_jujment.HeaderText = "رقم الحكم";
+            this.Numero_jujment.Name = "Numero_jujment";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "ملاحظات";
+            this.Description.Name = "Description";
             // 
             // Add_Files_Button
             // 
@@ -450,12 +435,23 @@
             this.Add_Files_Button.UseVisualStyleBackColor = true;
             this.Add_Files_Button.Click += new System.EventHandler(this.Add_Files_Button_Click_1);
             // 
+            // Box_Cord_Label
+            // 
+            this.Box_Cord_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Box_Cord_Label.AutoSize = true;
+            this.Box_Cord_Label.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Box_Cord_Label.Location = new System.Drawing.Point(464, 125);
+            this.Box_Cord_Label.Name = "Box_Cord_Label";
+            this.Box_Cord_Label.Size = new System.Drawing.Size(30, 22);
+            this.Box_Cord_Label.TabIndex = 44;
+            this.Box_Cord_Label.Text = "....";
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(633, 185);
+            this.label1.Location = new System.Drawing.Point(625, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 32;
@@ -464,12 +460,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.Box_Archive_update_Button);
             this.panel1.Controls.Add(this.Type_of_Archive_DataLabel);
+            this.panel1.Controls.Add(this.Box_Cord_Label);
             this.panel1.Controls.Add(this.Date_Jujment_NumiricUpDown);
-            this.panel1.Controls.Add(this.Imprimer_Box_Tag);
-            this.panel1.Controls.Add(this.Number_of_Folders_Textbox);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.Codes_of_Cases_ComboBox);
+            this.panel1.Controls.Add(this.Codes_of_Proces_ComboBox);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Add_Box_Button);
             this.panel1.Controls.Add(this.Code_of_Case_Label);
             this.panel1.Controls.Add(this.Date_of_Proce_Label);
@@ -482,16 +478,27 @@
             this.panel1.Size = new System.Drawing.Size(748, 163);
             this.panel1.TabIndex = 33;
             // 
+            // Box_Archive_update_Button
+            // 
+            this.Box_Archive_update_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Box_Archive_update_Button.Location = new System.Drawing.Point(10, 58);
+            this.Box_Archive_update_Button.Name = "Box_Archive_update_Button";
+            this.Box_Archive_update_Button.Size = new System.Drawing.Size(94, 32);
+            this.Box_Archive_update_Button.TabIndex = 59;
+            this.Box_Archive_update_Button.Text = "تحديث";
+            this.Box_Archive_update_Button.UseVisualStyleBackColor = true;
+            this.Box_Archive_update_Button.Click += new System.EventHandler(this.Box_Archive_update_Button_Click);
+            // 
             // Type_of_Archive_DataLabel
             // 
             this.Type_of_Archive_DataLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Type_of_Archive_DataLabel.AutoSize = true;
             this.Type_of_Archive_DataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Type_of_Archive_DataLabel.Location = new System.Drawing.Point(547, 74);
+            this.Type_of_Archive_DataLabel.Location = new System.Drawing.Point(118, 66);
             this.Type_of_Archive_DataLabel.Name = "Type_of_Archive_DataLabel";
-            this.Type_of_Archive_DataLabel.Size = new System.Drawing.Size(60, 24);
+            this.Type_of_Archive_DataLabel.Size = new System.Drawing.Size(35, 24);
             this.Type_of_Archive_DataLabel.TabIndex = 58;
-            this.Type_of_Archive_DataLabel.Text = "label7";
+            this.Type_of_Archive_DataLabel.Text = ".....";
             // 
             // Date_Jujment_NumiricUpDown
             // 
@@ -506,54 +513,15 @@
             this.Date_Jujment_NumiricUpDown.Size = new System.Drawing.Size(168, 25);
             this.Date_Jujment_NumiricUpDown.TabIndex = 57;
             // 
-            // Imprimer_Box_Tag
+            // Codes_of_Proces_ComboBox
             // 
-            this.Imprimer_Box_Tag.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Imprimer_Box_Tag.Location = new System.Drawing.Point(185, 125);
-            this.Imprimer_Box_Tag.Name = "Imprimer_Box_Tag";
-            this.Imprimer_Box_Tag.Size = new System.Drawing.Size(169, 32);
-            this.Imprimer_Box_Tag.TabIndex = 45;
-            this.Imprimer_Box_Tag.Text = "طباعة لاصقة العلبة";
-            this.Imprimer_Box_Tag.UseVisualStyleBackColor = true;
-            // 
-            // Number_of_Folders_Textbox
-            // 
-            this.Number_of_Folders_Textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Number_of_Folders_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Number_of_Folders_Textbox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number_of_Folders_Textbox.Location = new System.Drawing.Point(438, 128);
-            this.Number_of_Folders_Textbox.Name = "Number_of_Folders_Textbox";
-            this.Number_of_Folders_Textbox.Size = new System.Drawing.Size(169, 22);
-            this.Number_of_Folders_Textbox.TabIndex = 44;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(626, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 25);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "عدد الملفات";
-            // 
-            // Codes_of_Cases_ComboBox
-            // 
-            this.Codes_of_Cases_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Codes_of_Cases_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Codes_of_Cases_ComboBox.FormattingEnabled = true;
-            this.Codes_of_Cases_ComboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.Codes_of_Cases_ComboBox.Location = new System.Drawing.Point(10, 72);
-            this.Codes_of_Cases_ComboBox.Name = "Codes_of_Cases_ComboBox";
-            this.Codes_of_Cases_ComboBox.Size = new System.Drawing.Size(169, 24);
-            this.Codes_of_Cases_ComboBox.TabIndex = 42;
+            this.Codes_of_Proces_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Codes_of_Proces_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Codes_of_Proces_ComboBox.FormattingEnabled = true;
+            this.Codes_of_Proces_ComboBox.Location = new System.Drawing.Point(438, 66);
+            this.Codes_of_Proces_ComboBox.Name = "Codes_of_Proces_ComboBox";
+            this.Codes_of_Proces_ComboBox.Size = new System.Drawing.Size(169, 24);
+            this.Codes_of_Proces_ComboBox.TabIndex = 42;
             // 
             // Add_Box_Button
             // 
@@ -570,7 +538,7 @@
             // 
             this.Code_of_Case_Label.AutoSize = true;
             this.Code_of_Case_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Code_of_Case_Label.Location = new System.Drawing.Point(199, 73);
+            this.Code_of_Case_Label.Location = new System.Drawing.Point(635, 70);
             this.Code_of_Case_Label.Name = "Code_of_Case_Label";
             this.Code_of_Case_Label.Size = new System.Drawing.Size(102, 25);
             this.Code_of_Case_Label.TabIndex = 35;
@@ -591,7 +559,7 @@
             this.Type_of_Archive_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Type_of_Archive_Label.AutoSize = true;
             this.Type_of_Archive_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Type_of_Archive_Label.Location = new System.Drawing.Point(626, 73);
+            this.Type_of_Archive_Label.Location = new System.Drawing.Point(190, 65);
             this.Type_of_Archive_Label.Name = "Type_of_Archive_Label";
             this.Type_of_Archive_Label.Size = new System.Drawing.Size(111, 25);
             this.Type_of_Archive_Label.TabIndex = 33;
@@ -602,11 +570,11 @@
             this.The_Numbers_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.The_Numbers_of_Box_Label.AutoSize = true;
             this.The_Numbers_of_Box_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.The_Numbers_of_Box_Label.Location = new System.Drawing.Point(547, 18);
+            this.The_Numbers_of_Box_Label.Location = new System.Drawing.Point(573, 18);
             this.The_Numbers_of_Box_Label.Name = "The_Numbers_of_Box_Label";
-            this.The_Numbers_of_Box_Label.Size = new System.Drawing.Size(60, 24);
+            this.The_Numbers_of_Box_Label.Size = new System.Drawing.Size(35, 24);
             this.The_Numbers_of_Box_Label.TabIndex = 29;
-            this.The_Numbers_of_Box_Label.Text = "label7";
+            this.The_Numbers_of_Box_Label.Text = ".....";
             // 
             // Number_of_Box_Label
             // 
@@ -636,7 +604,6 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Number_Of_Boxs_numericUPDOWN)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Insert_Folders_DataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -646,8 +613,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel3;
         public System.Windows.Forms.Button Add_Transfer_Button;
         public System.Windows.Forms.ComboBox Adminstration_ComboBox;
         public System.Windows.Forms.ComboBox Tribunal_ComboBox;
@@ -658,9 +623,7 @@
         public System.Windows.Forms.Button Add_Files_Button;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.TextBox Number_of_Folders_Textbox;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.ComboBox Codes_of_Cases_ComboBox;
+        public System.Windows.Forms.ComboBox Codes_of_Proces_ComboBox;
         public System.Windows.Forms.Button Add_Box_Button;
         public System.Windows.Forms.Label Code_of_Case_Label;
         public System.Windows.Forms.Label Date_of_Proce_Label;
@@ -669,12 +632,7 @@
         public System.Windows.Forms.Label Number_of_Box_Label;
         public System.Windows.Forms.Label Numero_Du_Transsmition_Label;
         public System.Windows.Forms.Label Numero_Transfer_indicator_Label;
-        public System.Windows.Forms.Label Transfer_Type_NumeroB_Label;
         public System.Windows.Forms.DataGridView Insert_Folders_DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prenom;
-        public System.Windows.Forms.Button Imprimer_Box_Tag;
         private System.Windows.Forms.NumericUpDown Date_Jujment_NumiricUpDown;
         public System.Windows.Forms.Label Type_of_Archive_DataLabel;
         public System.Windows.Forms.ComboBox Tribunal_Codes_ComboBox;
@@ -690,5 +648,12 @@
         public System.Windows.Forms.Label Date_of_Transfer_Creation_Label;
         public System.Windows.Forms.Label Number_of_Boxs_Label;
         public System.Windows.Forms.Label Date_Label;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Dossier;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero_Dossier;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Anne_Overture;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero_jujment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        public System.Windows.Forms.Button Box_Archive_update_Button;
+        public System.Windows.Forms.Panel panel3;
     }
 }
