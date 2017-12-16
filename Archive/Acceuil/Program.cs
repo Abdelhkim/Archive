@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ArchiveAPPLICATION.DataSet1TableAdapters;
 using System.Data;
 
 namespace Acceuil
@@ -13,6 +12,7 @@ namespace Acceuil
     {
         public static SqlConnection Connection = new SqlConnection(@"Data Source=acer\sqlexpress;Initial Catalog=ARCHIVE_MJ;Integrated Security=True");
         public static SqlCommand CMD = new SqlCommand();
+        public static DataSet DataSET = new DataSet();
         public static SqlDataReader DataReader;
         public static DataTable Table = new DataTable();
         /// <summary>

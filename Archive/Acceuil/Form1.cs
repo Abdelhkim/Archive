@@ -27,7 +27,13 @@ namespace Acceuil
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SqlCommand CMD = new SqlCommand("SELECT Nom,Abdelhkim FROM Employes WHERE ID_Employe = @id_emp", Program.Connection);
+            SqlCommand CMD = new SqlCommand("SELECT Nom,Prenom FROM Employes WHERE ID_Employe = @id_emp", Program.Connection);
+            CMD.Parameters.AddWithValue("@id_emp", Login.Employe_ID);
+            SqlDataReader reader = CMD.ExecuteReader();
+            DataTable T = new DataTable();
+            T.Load(reader);
+            User_name_label.Text = T.Rows[0][0].ToString() + "  " + T.Rows[0][1].ToString();
+            User_name_label.Location = new Point(User_PicturBox.Location.X + (User_PicturBox.Width / 2) - (User_name_label.Width / 2), User_name_label.Location.Y);
             this.Opacity = 0.0;
             Timer_FadeIN.Start();
             Timer_Check_the_Home_Button_Value.Start();
@@ -54,8 +60,8 @@ namespace Acceuil
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
                 //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
-                E.changerbuttoncouleur(E.Button1, 255, 66, 66);
-                E.changerbuttoncouleur(E.Button2, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button1, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button2, 255, 66, 66);
                 E.Button1.ButtonText = "نعم";
                 E.Button2.ButtonText = "لا";
                 E.ChangeButtonLocation(E.Button1, 87, 55);
@@ -93,8 +99,8 @@ namespace Acceuil
             E.Message_Label.Text = "هل تريد إضافة تحويلة جديدة";
             //E.Message_Label.Location = new Point(112, 30);
             E.BackColor = Color.FromArgb(241, 196, 15);
-            E.changerbuttoncouleur(E.Button1, 241, 196, 15);
-            E.changerbuttoncouleur(E.Button2, 241, 196, 15);
+            E.Changerbuttoncouleur(E.Button1, 241, 196, 15);
+            E.Changerbuttoncouleur(E.Button2, 241, 196, 15);
             E.Button1.ButtonText = "نعم";
             E.Button2.ButtonText = "لا";
             E.ChangeButtonLocation(E.Button1, 87, 55);
@@ -141,8 +147,8 @@ namespace Acceuil
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
                 //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
-                E.changerbuttoncouleur(E.Button1, 255, 66, 66);
-                E.changerbuttoncouleur(E.Button2, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button1, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button2, 255, 66, 66);
                 E.Button1.ButtonText = "نعم";
                 E.Button2.ButtonText = "لا";
                 E.ChangeButtonLocation(E.Button1, 87, 55);
@@ -178,8 +184,8 @@ namespace Acceuil
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
                 //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
-                E.changerbuttoncouleur(E.Button1, 255, 66, 66);
-                E.changerbuttoncouleur(E.Button2, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button1, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button2, 255, 66, 66);
                 E.Button1.ButtonText = "نعم";
                 E.Button2.ButtonText = "لا";
                 E.ChangeButtonLocation(E.Button1, 87, 55);
@@ -215,8 +221,8 @@ namespace Acceuil
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
                 //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
-                E.changerbuttoncouleur(E.Button1, 255, 66, 66);
-                E.changerbuttoncouleur(E.Button2, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button1, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button2, 255, 66, 66);
                 E.Button1.ButtonText = "نعم";
                 E.Button2.ButtonText = "لا";
                 E.ChangeButtonLocation(E.Button1, 87, 55);
@@ -252,6 +258,7 @@ namespace Acceuil
             if (Home_button_Click_Value == 1)
             {
                 Home_Button_Click(sender, e);
+                Add_Verssement_Button.Enabled = true;
                 Home_button_Click_Value = 0;
             }
         }
@@ -265,8 +272,8 @@ namespace Acceuil
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
                 //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
-                E.changerbuttoncouleur(E.Button1, 255, 66, 66);
-                E.changerbuttoncouleur(E.Button2, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button1, 255, 66, 66);
+                E.Changerbuttoncouleur(E.Button2, 255, 66, 66);
                 E.Button1.ButtonText = "نعم";
                 E.Button2.ButtonText = "لا";
                 E.ChangeButtonLocation(E.Button1, 87, 55);
@@ -326,7 +333,7 @@ namespace Acceuil
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void add_Transer1_VisibleChanged(object sender, EventArgs e)
+        private void Add_Transer1_VisibleChanged(object sender, EventArgs e)
         {
         }
 

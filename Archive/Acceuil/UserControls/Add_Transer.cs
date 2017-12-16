@@ -256,7 +256,7 @@ namespace Acceuil
                 E.Message_Label.Text = "المرجوا إدخال معلومات العلبة رقم 1";
                 //E.Message_Label.Location = new Point(83, 38);
                 E.BackColor = Color.FromArgb(46, 204, 113);
-                E.changerbuttoncouleur(E.Button1, 46, 204, 113);
+                E.Changerbuttoncouleur(E.Button1, 46, 204, 113);
                 E.Button1.ButtonText = "نعم";
                 E.ChangeIcon(ArchiveAPPLICATION.Properties.Resources.success);
                 E.ShowDialog();
@@ -304,7 +304,7 @@ namespace Acceuil
                 E.Message_Label.Text = "المرجوا إدخال معلومات ملفات العلبة";
                 //E.Message_Label.Location = new Point(83, 38);
                 E.BackColor = Color.FromArgb(46, 204, 113);
-                E.changerbuttoncouleur(E.Button1, 46, 204, 113);
+                E.Changerbuttoncouleur(E.Button1, 46, 204, 113);
                 E.Button1.ButtonText = "نعم";
                 E.ChangeIcon(ArchiveAPPLICATION.Properties.Resources.success);
                 E.ShowDialog();
@@ -313,6 +313,7 @@ namespace Acceuil
             {
                 ErrorMSG E = new ErrorMSG();
                 E.Message_Label.Text = "يجب ملئ جميع خانات العلبة";
+                E.Button1.Location = new Point(151, 55);
                 E.Button1.ButtonText = "حسنا";
                 E.ShowDialog();
             }
@@ -396,7 +397,7 @@ namespace Acceuil
                     E.Message_Label.Text = "المرجوا إدخال معلومات العلبة رقم " + The_Numbers_of_Box_Label.Text;
                     //E.Message_Label.Location = new Point(83, 38);
                     E.BackColor = Color.FromArgb(46, 204, 113);
-                    E.changerbuttoncouleur(E.Button1, 46, 204, 113);
+                    E.Changerbuttoncouleur(E.Button1, 46, 204, 113);
                     E.Button1.ButtonText = "نعم";
                     E.ChangeIcon(ArchiveAPPLICATION.Properties.Resources.success);
                     E.ShowDialog();
@@ -404,12 +405,23 @@ namespace Acceuil
                 }
                 else
                 {
+                    if (Program.Connection.State == ConnectionState.Closed)
+                    {
+                        Program.Connection.Open();
+                    }
+                    SqlCommand CMD2 = new SqlCommand("UPDATE Carton SET NBRdossier = @nbrdossier WHERE Numero_Verssement = @N_ver AND Type_Archive = @Typ_Arch AND Numero_Box = @id_File", Program.Connection);
+                    CMD2.Parameters.AddWithValue("NBRdossier", Insert_Folders_DataGridView.Rows.Count - 1);
+                    CMD2.Parameters.AddWithValue("N_ver", int.Parse(Numero_Du_Transsmition_Label.Text));
+                    CMD2.Parameters.AddWithValue("@Typ_Arch", Type_of_Archive_DataLabel.Text);
+                    CMD2.Parameters.AddWithValue("@id_File", int.Parse(The_Numbers_of_Box_Label.Text));
+                    CMD2.ExecuteNonQuery();
                     Insert_Folders_DataGridView.Rows.Clear();
                     ResetControls(panel1);
                     ResetControls(panel2);
                     ResetControls(panel3);
                     Numero_Du_Transsmition_Label.Text = "....";
                     Date_of_Transfer_Creation_Label.Text = "....";
+                    Type_of_Archive_DataLabel.Text = "....";
                     Longeur_Label.Text = "....";
                     panel3.Enabled = true;
                     panel2.Enabled = false;
@@ -420,11 +432,12 @@ namespace Acceuil
                     E.Message_Label.Text = "يمكنك إضافة تحولية جديدة أو مراجعة التحويلة في القائمة على اليمين";
                     //E.Message_Label.Location = new Point(83, 38);
                     E.BackColor = Color.FromArgb(46, 204, 113);
-                    E.changerbuttoncouleur(E.Button1, 46, 204, 113);
+                    E.Changerbuttoncouleur(E.Button1, 46, 204, 113);
                     E.Button1.ButtonText = "نعم";
                     E.ChangeIcon(ArchiveAPPLICATION.Properties.Resources.success);
                     E.ShowDialog();
                     Form1.Home_button_Click_Value = 1;
+                    
                 }
             }
         }

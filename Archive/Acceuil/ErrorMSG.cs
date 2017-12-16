@@ -24,16 +24,15 @@ namespace Acceuil
             this.CenterToParent();
             Error_TITRE_Label.Location = new Point(Erreur_Icon_Picturebox.Location.X + (Erreur_Icon_Picturebox.Width / 2) - (Error_TITRE_Label.Width / 2), Error_TITRE_Label.Location.Y);
             Message_Label.Location = new Point(Erreur_Icon_Picturebox.Location.X + (Erreur_Icon_Picturebox.Width / 2) - (Message_Label.Width / 2), Message_Label.Location.Y);
-            this.Opacity = 0.1;
+            this.Opacity = 0.6;
             timer1.Start();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
             if (this.Opacity <= 0.99)
             {
-                this.Opacity += 0.2;
-                timer1.Start();
+                this.Opacity += 0.50;
             }
             else
             {
@@ -71,7 +70,7 @@ namespace Acceuil
         {
             Error_TITRE_Label.Location = new Point(X, Y);
         }
-        public void changerbuttoncouleur(Bunifu.Framework.UI.BunifuThinButton2 Button,int R, int G, int B)
+        public void Changerbuttoncouleur(Bunifu.Framework.UI.BunifuThinButton2 Button,int R, int G, int B)
         {
             Button.IdleFillColor = Color.White;
             Button.IdleForecolor = Color.Black;

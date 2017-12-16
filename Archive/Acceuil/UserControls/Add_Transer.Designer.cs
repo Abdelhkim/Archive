@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Responsable_ComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,7 +63,6 @@
             this.Box_Cord_Label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Box_Archive_update_Button = new System.Windows.Forms.Button();
             this.Type_of_Archive_DataLabel = new System.Windows.Forms.Label();
             this.Date_Jujment_NumiricUpDown = new System.Windows.Forms.NumericUpDown();
             this.Codes_of_Proces_ComboBox = new System.Windows.Forms.ComboBox();
@@ -347,21 +346,20 @@
             // 
             // Insert_Folders_DataGridView
             // 
-            this.Insert_Folders_DataGridView.AllowUserToDeleteRows = false;
             this.Insert_Folders_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Insert_Folders_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Insert_Folders_DataGridView.BackgroundColor = System.Drawing.Color.White;
             this.Insert_Folders_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Insert_Folders_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Insert_Folders_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Insert_Folders_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_Dossier,
@@ -369,20 +367,20 @@
             this.Anne_Overture,
             this.Numero_jujment,
             this.Description});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Insert_Folders_DataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Insert_Folders_DataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.Insert_Folders_DataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Insert_Folders_DataGridView.Location = new System.Drawing.Point(0, 0);
             this.Insert_Folders_DataGridView.Name = "Insert_Folders_DataGridView";
             this.Insert_Folders_DataGridView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.Insert_Folders_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.Insert_Folders_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Insert_Folders_DataGridView.Size = new System.Drawing.Size(748, 176);
             this.Insert_Folders_DataGridView.TabIndex = 45;
             // 
@@ -447,7 +445,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.Box_Archive_update_Button);
             this.panel1.Controls.Add(this.Type_of_Archive_DataLabel);
             this.panel1.Controls.Add(this.Box_Cord_Label);
             this.panel1.Controls.Add(this.Date_Jujment_NumiricUpDown);
@@ -464,17 +461,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(748, 163);
             this.panel1.TabIndex = 33;
-            // 
-            // Box_Archive_update_Button
-            // 
-            this.Box_Archive_update_Button.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Box_Archive_update_Button.Location = new System.Drawing.Point(10, 58);
-            this.Box_Archive_update_Button.Name = "Box_Archive_update_Button";
-            this.Box_Archive_update_Button.Size = new System.Drawing.Size(94, 32);
-            this.Box_Archive_update_Button.TabIndex = 59;
-            this.Box_Archive_update_Button.Text = "تحديث";
-            this.Box_Archive_update_Button.UseVisualStyleBackColor = true;
-            this.Box_Archive_update_Button.Click += new System.EventHandler(this.Box_Archive_update_Button_Click);
             // 
             // Type_of_Archive_DataLabel
             // 
@@ -503,6 +489,7 @@
             // 
             // Codes_of_Proces_ComboBox
             // 
+            this.Codes_of_Proces_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Codes_of_Proces_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Codes_of_Proces_ComboBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Codes_of_Proces_ComboBox.FormattingEnabled = true;
@@ -525,6 +512,7 @@
             // 
             // Code_of_Case_Label
             // 
+            this.Code_of_Case_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Code_of_Case_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Code_of_Case_Label.Location = new System.Drawing.Point(635, 70);
             this.Code_of_Case_Label.Name = "Code_of_Case_Label";
@@ -638,7 +626,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Anne_Overture;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero_jujment;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        public System.Windows.Forms.Button Box_Archive_update_Button;
         public System.Windows.Forms.Panel panel3;
     }
 }

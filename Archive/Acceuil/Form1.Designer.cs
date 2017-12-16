@@ -474,7 +474,7 @@
             this.add_Transer1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.add_Transer1, "add_Transer1");
             this.add_Transer1.Name = "add_Transer1";
-            this.add_Transer1.VisibleChanged += new System.EventHandler(this.add_Transer1_VisibleChanged);
+            this.add_Transer1.VisibleChanged += new System.EventHandler(this.Add_Transer1_VisibleChanged);
             // 
             // Form1
             // 
