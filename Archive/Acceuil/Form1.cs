@@ -27,6 +27,7 @@ namespace Acceuil
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SqlCommand CMD = new SqlCommand("SELECT Nom,Abdelhkim FROM Employes WHERE ID_Employe = @id_emp", Program.Connection);
             this.Opacity = 0.0;
             Timer_FadeIN.Start();
             Timer_Check_the_Home_Button_Value.Start();
@@ -51,7 +52,7 @@ namespace Acceuil
                 E.Button2.Visible = true;
                 E.Error_TITRE_Label.Text = "تحذير";
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
-                E.Message_Label.Location = new Point(6, 38);
+                //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
                 E.changerbuttoncouleur(E.Button1, 255, 66, 66);
                 E.changerbuttoncouleur(E.Button2, 255, 66, 66);
@@ -68,6 +69,7 @@ namespace Acceuil
                     revise_transfers1.Visible = false;
                     revise_Boxs1.Visible = false;
                     Add_Verssement_Button.Enabled = true;
+                    
                 }
                 if(E.Clicked() == 2)
                 {
@@ -89,7 +91,7 @@ namespace Acceuil
             E.Button2.Visible = true;
             E.Error_TITRE_Label.Text = "إنتباه";
             E.Message_Label.Text = "هل تريد إضافة تحويلة جديدة";
-            E.Message_Label.Location = new Point(112, 30);
+            //E.Message_Label.Location = new Point(112, 30);
             E.BackColor = Color.FromArgb(241, 196, 15);
             E.changerbuttoncouleur(E.Button1, 241, 196, 15);
             E.changerbuttoncouleur(E.Button2, 241, 196, 15);
@@ -137,7 +139,7 @@ namespace Acceuil
                 E.Button2.Visible = true;
                 E.Error_TITRE_Label.Text = "تحذير";
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
-                E.Message_Label.Location = new Point(6, 38);
+                //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
                 E.changerbuttoncouleur(E.Button1, 255, 66, 66);
                 E.changerbuttoncouleur(E.Button2, 255, 66, 66);
@@ -174,7 +176,7 @@ namespace Acceuil
                 E.Button2.Visible = true;
                 E.Error_TITRE_Label.Text = "تحذير";
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
-                E.Message_Label.Location = new Point(6, 38);
+                //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
                 E.changerbuttoncouleur(E.Button1, 255, 66, 66);
                 E.changerbuttoncouleur(E.Button2, 255, 66, 66);
@@ -190,7 +192,6 @@ namespace Acceuil
                     add_Transer1.Visible = false;
                     revise_transfers1.Visible = false;
                     revise_Boxs1.Visible = true;
-
                     Add_Verssement_Button.Enabled = true;
 
                 }
@@ -212,7 +213,7 @@ namespace Acceuil
                 E.Button2.Visible = true;
                 E.Error_TITRE_Label.Text = "تحذير";
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
-                E.Message_Label.Location = new Point(6, 38);
+                //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
                 E.changerbuttoncouleur(E.Button1, 255, 66, 66);
                 E.changerbuttoncouleur(E.Button2, 255, 66, 66);
@@ -254,7 +255,7 @@ namespace Acceuil
                 Home_button_Click_Value = 0;
             }
         }
-        private void Minimise_pictureBox_Click(object sender, EventArgs e)
+        private void Close_pictureBox_Click_1(object sender, EventArgs e)
         {
             if (add_Transer1.Visible == true && (add_Transer1.panel1.Enabled == true || add_Transer1.panel2.Enabled == true || add_Transer1.panel3.Enabled == true))
             {
@@ -262,7 +263,7 @@ namespace Acceuil
                 E.Button2.Visible = true;
                 E.Error_TITRE_Label.Text = "تحذير";
                 E.Message_Label.Text = "لم يتم إكتمال التحويلة:هل تريدالخروج من صفحت التحويلة";
-                E.Message_Label.Location = new Point(6, 38);
+                //E.Message_Label.Location = new Point(6, 38);
                 E.BackColor = Color.FromArgb(255, 66, 66);
                 E.changerbuttoncouleur(E.Button1, 255, 66, 66);
                 E.changerbuttoncouleur(E.Button2, 255, 66, 66);
@@ -285,7 +286,6 @@ namespace Acceuil
                 Login L = new Login();
                 L.Show();
             }
-
         }
         #region Mouvment Code
         private void Header_MouseDown(object sender, MouseEventArgs e)
@@ -307,10 +307,6 @@ namespace Acceuil
                 this.SetDesktopLocation(MousePosition.X - MvalX, MousePosition.Y - MvalY);
             }
         }
-        private void Close_pictureBox_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
         private void Timer_FadeIN_Tick(object sender, EventArgs e)
         {
@@ -323,6 +319,15 @@ namespace Acceuil
             {
                 Timer_FadeIN.Stop();
             }
+        }
+
+        private void Minimise_pictureBox_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void add_Transer1_VisibleChanged(object sender, EventArgs e)
+        {
         }
 
         private void Form1_Move(object sender, EventArgs e)

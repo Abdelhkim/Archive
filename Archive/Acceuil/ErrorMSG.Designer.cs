@@ -119,20 +119,20 @@
             // Message_Label
             // 
             this.Message_Label.AutoSize = true;
-            this.Message_Label.Font = new System.Drawing.Font("GE SS Unique Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Message_Label.Location = new System.Drawing.Point(191, 38);
+            this.Message_Label.Font = new System.Drawing.Font("Arabic Typesetting", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Message_Label.Location = new System.Drawing.Point(191, 32);
             this.Message_Label.Name = "Message_Label";
-            this.Message_Label.Size = new System.Drawing.Size(49, 21);
+            this.Message_Label.Size = new System.Drawing.Size(44, 24);
             this.Message_Label.TabIndex = 1;
             this.Message_Label.Text = "label2";
             // 
             // Error_TITRE_Label
             // 
             this.Error_TITRE_Label.AutoSize = true;
-            this.Error_TITRE_Label.Font = new System.Drawing.Font("GE SS Unique Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Error_TITRE_Label.Font = new System.Drawing.Font("GE SS Unique Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Error_TITRE_Label.Location = new System.Drawing.Point(181, 2);
             this.Error_TITRE_Label.Name = "Error_TITRE_Label";
-            this.Error_TITRE_Label.Size = new System.Drawing.Size(64, 36);
+            this.Error_TITRE_Label.Size = new System.Drawing.Size(58, 32);
             this.Error_TITRE_Label.TabIndex = 0;
             this.Error_TITRE_Label.Text = "خطأ";
             // 

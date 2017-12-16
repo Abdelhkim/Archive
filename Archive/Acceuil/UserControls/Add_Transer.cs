@@ -30,7 +30,7 @@ namespace Acceuil
         }
         private void Add_Transfer_Button_Click_1(object sender, EventArgs e)
         {
-            if (Tribunal_ComboBox.Text != string.Empty && Tribunal_Codes_ComboBox.Text != string.Empty && Responsable_ComboBox.Text != string.Empty && Adminstration_ComboBox.Text != string.Empty && Number_Of_Boxs_numericUPDOWN.Value != 0)
+            if (Tribunal_ComboBox.Text != string.Empty && Tribunal_Codes_ComboBox.Text != string.Empty && Responsable_ComboBox.Text != string.Empty && Adminstration_ComboBox.Text != string.Empty && Number_Of_Boxs_numericUPDOWN.Value != 0 && (Non_radio.Checked == true || Oui_radio.Checked== true))
             {
                 panel1.Enabled = true;
                 panel3.Enabled = false;
@@ -167,7 +167,7 @@ namespace Acceuil
                             Codes_of_Proces_ComboBox.Items.Add(Program.DataReader[0]);
                         }
                     }
-                    if (Tribunal_ComboBox.Text == "محكمة الاستئناف الإداريه")
+                    if (Tribunal_ComboBox.Text == "محكمة الاستئناف الإداريه ")
                     {
                         Codes_of_Proces_ComboBox.Items.Clear();
                         Program.CMD = new SqlCommand("SELECT Code_Proces,Nom_Proces,Duree_Archive FROM Proces WHERE Tribunal = 'محكمة الاستئناف الإداريه'", Program.Connection);
@@ -254,7 +254,7 @@ namespace Acceuil
                 E.Button1.Location = new Point(150, 55);
                 E.Error_TITRE_Label.Text = "تم إدخال التحويلة بنجاح";
                 E.Message_Label.Text = "المرجوا إدخال معلومات العلبة رقم 1";
-                E.Message_Label.Location = new Point(83, 38);
+                //E.Message_Label.Location = new Point(83, 38);
                 E.BackColor = Color.FromArgb(46, 204, 113);
                 E.changerbuttoncouleur(E.Button1, 46, 204, 113);
                 E.Button1.ButtonText = "نعم";
@@ -267,6 +267,7 @@ namespace Acceuil
                 ErrorMSG E = new ErrorMSG();
                 E.Message_Label.Text = "يجب ملئ جميع الخانات";
                 E.Button1.ButtonText = "حسنا";
+                E.Button1.Location = new Point(148, 55);
                 E.ShowDialog();
             }
                 
@@ -275,7 +276,7 @@ namespace Acceuil
 
         private void Add_Box_Button_Click_1(object sender, EventArgs e)
         {
-            if (Codes_of_Proces_ComboBox.Text != string.Empty && Date_Jujment_NumiricUpDown.Value != 0 )
+            if (Codes_of_Proces_ComboBox.Text != string.Empty && Date_Jujment_NumiricUpDown.Value != 0 && Type_of_Archive_DataLabel.Text != "...." )
             {
                 panel2.Enabled = true;
                 panel1.Enabled = false;
@@ -301,7 +302,7 @@ namespace Acceuil
                 E.Button1.Location = new Point(150, 55);
                 E.Error_TITRE_Label.Text = "تم إدخال العلبة بنجاح";
                 E.Message_Label.Text = "المرجوا إدخال معلومات ملفات العلبة";
-                E.Message_Label.Location = new Point(83, 38);
+                //E.Message_Label.Location = new Point(83, 38);
                 E.BackColor = Color.FromArgb(46, 204, 113);
                 E.changerbuttoncouleur(E.Button1, 46, 204, 113);
                 E.Button1.ButtonText = "نعم";
@@ -339,7 +340,7 @@ namespace Acceuil
             {
                 ErrorMSG E = new ErrorMSG();
                 E.Message_Label.Text = "يوجد خانة لم يتم إملائها";
-                E.Message_Label.Location = new Point(124, 38);
+                //E.Message_Label.Location = new Point(124, 38);
                 E.Button1.Location = new Point(151, 55);
                 E.Button1.ButtonText = "حسنا";
                 E.ShowDialog();
@@ -367,6 +368,14 @@ namespace Acceuil
                     }
                     Program.Connection.Close();
                     Program.Connection.Open();
+                    SqlCommand CMD2 = new SqlCommand("UPDATE Carton SET NBRdossier = @nbrdossier WHERE Numero_Verssement = @N_ver AND Type_Archive = @Typ_Arch AND Numero_Box = @id_File", Program.Connection);
+                    CMD2.Parameters.AddWithValue("NBRdossier", Insert_Folders_DataGridView.Rows.Count - 1);
+                    CMD2.Parameters.AddWithValue("N_ver", int.Parse(Numero_Du_Transsmition_Label.Text));
+                    CMD2.Parameters.AddWithValue("@Typ_Arch", Type_of_Archive_DataLabel.Text);
+                    CMD2.Parameters.AddWithValue("@id_File", int.Parse(The_Numbers_of_Box_Label.Text));
+                    CMD2.ExecuteNonQuery();
+                    Program.Connection.Close();
+                    Program.Connection.Open();
                     SqlCommand CMD = new SqlCommand("SELECT TOP(1)Position,Id_Address FROM Addressage WHERE Libre_Etat = 0 ", Program.Connection);
                     SqlDataReader Reader = CMD.ExecuteReader();
                     DataTable T = new DataTable();
@@ -379,12 +388,13 @@ namespace Acceuil
                     Insert_Folders_DataGridView.Rows.Clear();
                     The_Numbers_of_Box_Label.Text = (int.Parse(The_Numbers_of_Box_Label.Text) + 1).ToString();
                     ResetControls(panel1);
+                    Type_of_Archive_DataLabel.Text = "....";
 
                     ErrorMSG E = new ErrorMSG();
                     E.Button1.Location = new Point(150, 55);
                     E.Error_TITRE_Label.Text = "تم إدخال معلومات الملفات بنجاح";
                     E.Message_Label.Text = "المرجوا إدخال معلومات العلبة رقم " + The_Numbers_of_Box_Label.Text;
-                    E.Message_Label.Location = new Point(83, 38);
+                    //E.Message_Label.Location = new Point(83, 38);
                     E.BackColor = Color.FromArgb(46, 204, 113);
                     E.changerbuttoncouleur(E.Button1, 46, 204, 113);
                     E.Button1.ButtonText = "نعم";
@@ -408,7 +418,7 @@ namespace Acceuil
                     E.Button1.Location = new Point(150, 55);
                     E.Error_TITRE_Label.Text = "لقد تم إدخال جميع الملفات في التحويلة";
                     E.Message_Label.Text = "يمكنك إضافة تحولية جديدة أو مراجعة التحويلة في القائمة على اليمين";
-                    E.Message_Label.Location = new Point(83, 38);
+                    //E.Message_Label.Location = new Point(83, 38);
                     E.BackColor = Color.FromArgb(46, 204, 113);
                     E.changerbuttoncouleur(E.Button1, 46, 204, 113);
                     E.Button1.ButtonText = "نعم";
@@ -420,8 +430,12 @@ namespace Acceuil
         }
         private void Add_Transer_VisibleChanged(object sender, EventArgs e)
         {
-            //ResetControls(panel1);
+            ResetControls(panel3);
+            ResetControls(panel1);
             ResetControls(panel2);
+            panel2.Enabled = false;
+            panel1.Enabled = false;
+            panel3.Enabled = true;
         }
         public static void ResetControls(Panel P)
         {
@@ -577,6 +591,52 @@ namespace Acceuil
                     }
                 else
                    Type_of_Archive_DataLabel.Text = "EZ"; 
+            }
+        }
+
+        private void Codes_of_Proces_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Codes_of_Proces_ComboBox.Text != string.Empty && Date_Jujment_NumiricUpDown.Value != 0)
+            {
+                if (Program.Connection.State == ConnectionState.Closed)
+                {
+                    Program.Connection.Open();
+                }
+                SqlCommand CMD = new SqlCommand("SELECT Duree_Archive FROM Proces WHERE Code_Proces = @code ", Program.Connection);
+                CMD.Parameters.AddWithValue("@code", Codes_of_Proces_ComboBox.Text);
+                SqlDataReader Reader = CMD.ExecuteReader();
+                DataTable T = new DataTable();
+                T.Load(Reader);
+                int Anne_archive = Convert.ToInt32(Date_Jujment_NumiricUpDown.Value.ToString()) + int.Parse(T.Rows[0][0].ToString());
+                if (Anne_archive > DateTime.Now.Year)
+                {
+                    Type_of_Archive_DataLabel.Text = "EY";
+                }
+                else
+                    Type_of_Archive_DataLabel.Text = "EZ";
+            }
+        }
+
+        private void Date_Jujment_NumiricUpDown_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (Codes_of_Proces_ComboBox.Text != string.Empty && Date_Jujment_NumiricUpDown.Value != 0)
+            {
+                if (Program.Connection.State == ConnectionState.Closed)
+                {
+                    Program.Connection.Open();
+                }
+                SqlCommand CMD = new SqlCommand("SELECT Duree_Archive FROM Proces WHERE Code_Proces = @code ", Program.Connection);
+                CMD.Parameters.AddWithValue("@code", Codes_of_Proces_ComboBox.Text);
+                SqlDataReader Reader = CMD.ExecuteReader();
+                DataTable T = new DataTable();
+                T.Load(Reader);
+                int Anne_archive = Convert.ToInt32(Date_Jujment_NumiricUpDown.Value.ToString()) + int.Parse(T.Rows[0][0].ToString());
+                if (Anne_archive > DateTime.Now.Year)
+                {
+                    Type_of_Archive_DataLabel.Text = "EY";
+                }
+                else
+                    Type_of_Archive_DataLabel.Text = "EZ";
             }
         }
     }

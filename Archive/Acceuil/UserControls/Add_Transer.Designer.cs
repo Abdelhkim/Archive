@@ -114,9 +114,6 @@
             this.Responsable_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Responsable_ComboBox.Font = new System.Drawing.Font("GE SS Unique Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Responsable_ComboBox.FormattingEnabled = true;
-            this.Responsable_ComboBox.Items.AddRange(new object[] {
-            "الرئاسة",
-            "النيابة العامة"});
             this.Responsable_ComboBox.Location = new System.Drawing.Point(10, 124);
             this.Responsable_ComboBox.Name = "Responsable_ComboBox";
             this.Responsable_ComboBox.Size = new System.Drawing.Size(169, 25);
@@ -124,7 +121,6 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.Location = new System.Drawing.Point(235, 124);
             this.label3.Name = "label3";
@@ -161,7 +157,6 @@
             // Stocker_Label
             // 
             this.Stocker_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Stocker_Label.AutoSize = true;
             this.Stocker_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Stocker_Label.Location = new System.Drawing.Point(671, 150);
             this.Stocker_Label.Name = "Stocker_Label";
@@ -187,7 +182,6 @@
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.Location = new System.Drawing.Point(609, 115);
             this.label4.Name = "label4";
@@ -220,7 +214,6 @@
             // Number_of_Boxs_Label
             // 
             this.Number_of_Boxs_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Number_of_Boxs_Label.AutoSize = true;
             this.Number_of_Boxs_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Number_of_Boxs_Label.Location = new System.Drawing.Point(640, 80);
             this.Number_of_Boxs_Label.Name = "Number_of_Boxs_Label";
@@ -231,7 +224,6 @@
             // Date_Label
             // 
             this.Date_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Date_Label.AutoSize = true;
             this.Date_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Date_Label.Location = new System.Drawing.Point(676, 45);
             this.Date_Label.Name = "Date_Label";
@@ -251,7 +243,6 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.Location = new System.Drawing.Point(201, 55);
             this.label5.Name = "label5";
@@ -273,7 +264,6 @@
             // Numero_Transfer_indicator_Label
             // 
             this.Numero_Transfer_indicator_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numero_Transfer_indicator_Label.AutoSize = true;
             this.Numero_Transfer_indicator_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Numero_Transfer_indicator_Label.Location = new System.Drawing.Point(616, 10);
             this.Numero_Transfer_indicator_Label.Name = "Numero_Transfer_indicator_Label";
@@ -328,7 +318,6 @@
             // 
             // Tribunal_Label
             // 
-            this.Tribunal_Label.AutoSize = true;
             this.Tribunal_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Tribunal_Label.Location = new System.Drawing.Point(235, 19);
             this.Tribunal_Label.Name = "Tribunal_Label";
@@ -338,7 +327,6 @@
             // 
             // Administration_Label
             // 
-            this.Administration_Label.AutoSize = true;
             this.Administration_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Administration_Label.Location = new System.Drawing.Point(240, 91);
             this.Administration_Label.Name = "Administration_Label";
@@ -449,7 +437,6 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.Location = new System.Drawing.Point(625, 125);
             this.label1.Name = "label1";
@@ -496,9 +483,9 @@
             this.Type_of_Archive_DataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Type_of_Archive_DataLabel.Location = new System.Drawing.Point(118, 66);
             this.Type_of_Archive_DataLabel.Name = "Type_of_Archive_DataLabel";
-            this.Type_of_Archive_DataLabel.Size = new System.Drawing.Size(35, 24);
+            this.Type_of_Archive_DataLabel.Size = new System.Drawing.Size(30, 24);
             this.Type_of_Archive_DataLabel.TabIndex = 58;
-            this.Type_of_Archive_DataLabel.Text = ".....";
+            this.Type_of_Archive_DataLabel.Text = "....";
             // 
             // Date_Jujment_NumiricUpDown
             // 
@@ -512,6 +499,7 @@
             this.Date_Jujment_NumiricUpDown.Name = "Date_Jujment_NumiricUpDown";
             this.Date_Jujment_NumiricUpDown.Size = new System.Drawing.Size(168, 25);
             this.Date_Jujment_NumiricUpDown.TabIndex = 57;
+            this.Date_Jujment_NumiricUpDown.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Date_Jujment_NumiricUpDown_KeyUp);
             // 
             // Codes_of_Proces_ComboBox
             // 
@@ -522,6 +510,7 @@
             this.Codes_of_Proces_ComboBox.Name = "Codes_of_Proces_ComboBox";
             this.Codes_of_Proces_ComboBox.Size = new System.Drawing.Size(169, 24);
             this.Codes_of_Proces_ComboBox.TabIndex = 42;
+            this.Codes_of_Proces_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Codes_of_Proces_ComboBox_SelectedIndexChanged);
             // 
             // Add_Box_Button
             // 
@@ -536,7 +525,6 @@
             // 
             // Code_of_Case_Label
             // 
-            this.Code_of_Case_Label.AutoSize = true;
             this.Code_of_Case_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Code_of_Case_Label.Location = new System.Drawing.Point(635, 70);
             this.Code_of_Case_Label.Name = "Code_of_Case_Label";
@@ -546,7 +534,6 @@
             // 
             // Date_of_Proce_Label
             // 
-            this.Date_of_Proce_Label.AutoSize = true;
             this.Date_of_Proce_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Date_of_Proce_Label.Location = new System.Drawing.Point(193, 17);
             this.Date_of_Proce_Label.Name = "Date_of_Proce_Label";
@@ -557,7 +544,6 @@
             // Type_of_Archive_Label
             // 
             this.Type_of_Archive_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Type_of_Archive_Label.AutoSize = true;
             this.Type_of_Archive_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Type_of_Archive_Label.Location = new System.Drawing.Point(190, 65);
             this.Type_of_Archive_Label.Name = "Type_of_Archive_Label";
@@ -579,7 +565,6 @@
             // Number_of_Box_Label
             // 
             this.Number_of_Box_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Number_of_Box_Label.AutoSize = true;
             this.Number_of_Box_Label.Font = new System.Drawing.Font("GE SS Unique Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Number_of_Box_Label.Location = new System.Drawing.Point(650, 18);
             this.Number_of_Box_Label.Name = "Number_of_Box_Label";

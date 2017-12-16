@@ -31,14 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Header = new System.Windows.Forms.Panel();
+            this.Close_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Minimise_pictureBox = new System.Windows.Forms.PictureBox();
             this.Title_Lable = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.User_name_label = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Timer_Check_the_Home_Button_Value = new System.Windows.Forms.Timer(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Timer_FadeIN = new System.Windows.Forms.Timer(this.components);
             this.Help_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Logout_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Profile_Button = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -47,33 +45,35 @@
             this.Revise_Transfers_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Add_Verssement_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home_Button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.User_name_label = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.User_PicturBox = new System.Windows.Forms.PictureBox();
             this.User_Background_picturebox = new System.Windows.Forms.PictureBox();
-            this.Minimise_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Close_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Timer_Check_the_Home_Button_Value = new System.Windows.Forms.Timer(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Timer_FadeIN = new System.Windows.Forms.Timer(this.components);
             this.acceuil_user1 = new Acceuil.Acceuil_user();
             this.revise_Boxs1 = new Acceuil.Revise_Boxs();
             this.revise_transfers1 = new Acceuil.Revise_transfers();
             this.add_Transer1 = new Acceuil.Add_Transer();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_PicturBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_Background_picturebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(104)))), ((int)(((byte)(23)))));
-            this.Header.Controls.Add(this.Minimise_pictureBox);
             this.Header.Controls.Add(this.Close_pictureBox);
+            this.Header.Controls.Add(this.Minimise_pictureBox);
             this.Header.Controls.Add(this.Title_Lable);
             this.Header.Controls.Add(this.Maximise_pictureBox);
             this.Header.Controls.Add(this.Humbutton);
@@ -85,11 +85,45 @@
             this.Header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Header_MouseMove);
             this.Header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Header_MouseUp);
             // 
+            // Close_pictureBox
+            // 
+            this.Close_pictureBox.Image = global::ArchiveAPPLICATION.Properties.Resources.close;
+            resources.ApplyResources(this.Close_pictureBox, "Close_pictureBox");
+            this.Close_pictureBox.Name = "Close_pictureBox";
+            this.Close_pictureBox.TabStop = false;
+            this.Close_pictureBox.Click += new System.EventHandler(this.Close_pictureBox_Click_1);
+            // 
+            // Minimise_pictureBox
+            // 
+            this.Minimise_pictureBox.Image = global::ArchiveAPPLICATION.Properties.Resources.Reduire;
+            resources.ApplyResources(this.Minimise_pictureBox, "Minimise_pictureBox");
+            this.Minimise_pictureBox.Name = "Minimise_pictureBox";
+            this.Minimise_pictureBox.TabStop = false;
+            this.Minimise_pictureBox.Click += new System.EventHandler(this.Minimise_pictureBox_Click);
+            // 
             // Title_Lable
             // 
             resources.ApplyResources(this.Title_Lable, "Title_Lable");
             this.Title_Lable.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Title_Lable.Name = "Title_Lable";
+            // 
+            // Maximise_pictureBox
+            // 
+            this.Maximise_pictureBox.Image = global::ArchiveAPPLICATION.Properties.Resources.Agrendire;
+            resources.ApplyResources(this.Maximise_pictureBox, "Maximise_pictureBox");
+            this.Maximise_pictureBox.Name = "Maximise_pictureBox";
+            this.Maximise_pictureBox.TabStop = false;
+            this.Maximise_pictureBox.Click += new System.EventHandler(this.Maximise_pictureBox_Click);
+            // 
+            // Humbutton
+            // 
+            resources.ApplyResources(this.Humbutton, "Humbutton");
+            this.Humbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Humbutton.Image = global::ArchiveAPPLICATION.Properties.Resources.menu;
+            this.Humbutton.ImageActive = null;
+            this.Humbutton.Name = "Humbutton";
+            this.Humbutton.TabStop = false;
+            this.Humbutton.Zoom = 10;
             // 
             // panel1
             // 
@@ -106,41 +140,6 @@
             this.panel1.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.panel3.Controls.Add(this.User_name_label);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.panel3.Name = "panel3";
-            // 
-            // User_name_label
-            // 
-            resources.ApplyResources(this.User_name_label, "User_name_label");
-            this.User_name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.User_name_label.Name = "User_name_label";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.panel2.Controls.Add(this.User_PicturBox);
-            this.panel2.Controls.Add(this.User_Background_picturebox);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // Timer_Check_the_Home_Button_Value
-            // 
-            this.Timer_Check_the_Home_Button_Value.Tick += new System.EventHandler(this.Timer_Check_the_Home_Button_Value_Tick);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // Timer_FadeIN
-            // 
-            this.Timer_FadeIN.Tick += new System.EventHandler(this.Timer_FadeIN_Tick);
             // 
             // Help_Button
             // 
@@ -402,6 +401,28 @@
             this.Home_Button.TextFont = new System.Drawing.Font("GE SS Unique Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panel3.Controls.Add(this.User_name_label);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panel3.Name = "panel3";
+            // 
+            // User_name_label
+            // 
+            resources.ApplyResources(this.User_name_label, "User_name_label");
+            this.User_name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.User_name_label.Name = "User_name_label";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.panel2.Controls.Add(this.User_PicturBox);
+            this.panel2.Controls.Add(this.User_Background_picturebox);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
             // User_PicturBox
             // 
             this.User_PicturBox.BackgroundImage = global::ArchiveAPPLICATION.Properties.Resources.Cadre;
@@ -418,39 +439,18 @@
             this.User_Background_picturebox.Name = "User_Background_picturebox";
             this.User_Background_picturebox.TabStop = false;
             // 
-            // Minimise_pictureBox
+            // Timer_Check_the_Home_Button_Value
             // 
-            this.Minimise_pictureBox.Image = global::ArchiveAPPLICATION.Properties.Resources.close;
-            resources.ApplyResources(this.Minimise_pictureBox, "Minimise_pictureBox");
-            this.Minimise_pictureBox.Name = "Minimise_pictureBox";
-            this.Minimise_pictureBox.TabStop = false;
-            this.Minimise_pictureBox.Click += new System.EventHandler(this.Minimise_pictureBox_Click);
+            this.Timer_Check_the_Home_Button_Value.Tick += new System.EventHandler(this.Timer_Check_the_Home_Button_Value_Tick);
             // 
-            // Close_pictureBox
+            // bunifuElipse1
             // 
-            this.Close_pictureBox.Image = global::ArchiveAPPLICATION.Properties.Resources.Reduire;
-            resources.ApplyResources(this.Close_pictureBox, "Close_pictureBox");
-            this.Close_pictureBox.Name = "Close_pictureBox";
-            this.Close_pictureBox.TabStop = false;
-            this.Close_pictureBox.Click += new System.EventHandler(this.Close_pictureBox_Click);
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
             // 
-            // Maximise_pictureBox
+            // Timer_FadeIN
             // 
-            this.Maximise_pictureBox.Image = global::ArchiveAPPLICATION.Properties.Resources.Agrendire;
-            resources.ApplyResources(this.Maximise_pictureBox, "Maximise_pictureBox");
-            this.Maximise_pictureBox.Name = "Maximise_pictureBox";
-            this.Maximise_pictureBox.TabStop = false;
-            this.Maximise_pictureBox.Click += new System.EventHandler(this.Maximise_pictureBox_Click);
-            // 
-            // Humbutton
-            // 
-            resources.ApplyResources(this.Humbutton, "Humbutton");
-            this.Humbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Humbutton.Image = global::ArchiveAPPLICATION.Properties.Resources.menu;
-            this.Humbutton.ImageActive = null;
-            this.Humbutton.Name = "Humbutton";
-            this.Humbutton.TabStop = false;
-            this.Humbutton.Zoom = 10;
+            this.Timer_FadeIN.Tick += new System.EventHandler(this.Timer_FadeIN_Tick);
             // 
             // acceuil_user1
             // 
@@ -474,6 +474,7 @@
             this.add_Transer1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.add_Transer1, "add_Transer1");
             this.add_Transer1.Name = "add_Transer1";
+            this.add_Transer1.VisibleChanged += new System.EventHandler(this.add_Transer1_VisibleChanged);
             // 
             // Form1
             // 
@@ -492,16 +493,16 @@
             this.Move += new System.EventHandler(this.Form1_Move);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.User_PicturBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_Background_picturebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -511,8 +512,8 @@
         private System.Windows.Forms.Panel Header;
         private Bunifu.Framework.UI.BunifuImageButton Humbutton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox Minimise_pictureBox;
         private System.Windows.Forms.PictureBox Close_pictureBox;
+        private System.Windows.Forms.PictureBox Minimise_pictureBox;
         private Bunifu.Framework.UI.BunifuCustomLabel Title_Lable;
         private System.Windows.Forms.PictureBox Maximise_pictureBox;
         private System.Windows.Forms.Panel panel2;

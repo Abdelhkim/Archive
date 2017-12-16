@@ -23,6 +23,7 @@ namespace Acceuil
         {
             this.CenterToParent();
             Error_TITRE_Label.Location = new Point(Erreur_Icon_Picturebox.Location.X + (Erreur_Icon_Picturebox.Width / 2) - (Error_TITRE_Label.Width / 2), Error_TITRE_Label.Location.Y);
+            Message_Label.Location = new Point(Erreur_Icon_Picturebox.Location.X + (Erreur_Icon_Picturebox.Width / 2) - (Message_Label.Width / 2), Message_Label.Location.Y);
             this.Opacity = 0.1;
             timer1.Start();
         }
@@ -111,6 +112,7 @@ namespace Acceuil
 
         private void Cancel_Image_Button_Click(object sender, EventArgs e)
         {
+            Form1.Btn_clicked = 2;
             this.Close();
         }
 
